@@ -1,0 +1,2 @@
+# NonLeetCode
+LeetCode-like questions
