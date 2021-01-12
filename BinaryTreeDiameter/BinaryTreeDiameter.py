@@ -19,6 +19,7 @@ def binaryTreeDiameter(tree):
 def helperDiameter(tree):
 	# Base Case
 	if not tree:
+		# By convention, height of empty node is -1. Same with diameter. 
 		return TreeInfo(-1, -1)
 	
 	# By recursion, we can solve the problem for the left and right children
