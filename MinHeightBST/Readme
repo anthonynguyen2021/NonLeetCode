@@ -1,0 +1,5 @@
+Write a function that takes in a non-empty array of distinct integers, constructs a BST from the integers, and returns the root of the BST. The function should minimize the height of the BST. 
+
+The definition of BST we're using is a binary tree such that each node has the BST property: Every node to the left of the parent is strictly smaller while every node to the right of the parent is at least as great as the parent value. 
+
+Idea: Write a helper method that takes in the array, two pointers in the array and return root (a BST class) that corresponds to the middle of the array. The method should be recursive. Meaning that tree.left is called on the array[:mid] and tree.right is called on the array[mid+1:]
