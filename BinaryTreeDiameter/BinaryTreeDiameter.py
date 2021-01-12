@@ -13,6 +13,7 @@ class TreeInfo:
 
 # Time = O(n)
 # Space = O(n)
+# We use DFS in-order traversal
 def binaryTreeDiameter(tree):
     return helperDiameter(tree).diameter
 
