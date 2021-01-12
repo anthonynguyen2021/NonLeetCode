@@ -8,7 +8,7 @@ class BinaryTree:
 # Space - O(n) (Worst case scenario)
 
 def branchSums(root):
-    totalSum = []
+	totalSum = []
 	helperBranchSums(root, totalSum, 0)
 	return totalSum
 
