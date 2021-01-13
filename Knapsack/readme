@@ -1,0 +1,6 @@
+You're given an array of arrays where each subarray holds two integer values and represents an item; the first integer is the item's value while the second represents the item's weight. You're also given a max capacity of a knapsack that you have.
+
+You want to maximize the value of the items without exceeding the weight of your knapsack. It's assumed that you can pick an item at most once. 
+
+Sample Input: items = [[1, 2], [4, 3], [5, 6], [6, 7]], capacity = 10. Note that it's important that the weight are ordered by increasing order with no loss in generality and that the item values should increase strictly. 
+
