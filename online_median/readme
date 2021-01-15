@@ -1,0 +1,5 @@
+Write a function that computes the running median of a sequence of numbers. For instance, if we have a continuous stream of data 1, 0, 3, 5, 2, 0, 1, we have a continuous stream of medians 1, 0.5, 1, 2, 2, 1.5, 1.
+
+Solution: The idea is to use two heaps: A max-heap and a min-heap. We roughly hold half of the incoming data in the max and min heap where everything in the max heap is less than or equal to the min heap elements.
+Now, to start the algorithm off, we push an incoming data in the min heap and pop it into the max heap. We check if the length of the max heap is more than the length of the min heap, pop the item in the max heap into the min heap. At the end of the loop, we append the median. If the length of the heaps don't equal, append min_heap[0], other wise append the average of max_heap[0] and min_heap[0].
+Note in Python, heapq uses a min heap, so we can mimic a max heap by negating the value and pushing it in. 
