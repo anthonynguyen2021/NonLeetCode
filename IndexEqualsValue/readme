@@ -1,0 +1,7 @@
+Write a function that finds a fixed point and the argument must be the least. Assume the input array is sorted and have distinct elements. For instance, given array = [-5, -3, 0, 3, 4, 5, 9], we have array[3] = 3. So return 3 since it's the least index such that it's a fixed point.
+
+Solution: This is done in O(log n) time with constant auxillary space. The brute force solution is to search the array and check; this is done in O(n) time. However, 
+if we wanted a better solution than O(n), we guess that it must be O(log n). An algorithm that runs in O(log n) time is a binary search algorithm. Start with two pointers left and right.
+If the middle is a fixed point, set right = mid - 1. Observe that if array[mid] - mid < 0, this means that everything to the left of mid can't be a fixed point. To see this,
+we use the assumption of sortedness and distinctnes. First, note that array[mid-1] != mid-1. Otherwise, we would have array[mid-1] = array[mid], a contradiction. Same 
+thing with array[mid] - mid > 0. 
