@@ -1,0 +1,8 @@
+Write a function that takes in an array of distinct integers (I believe this can be relaxed to non-distinct) as well as an integer k and that returns the kth smasllest in that array. 
+
+This function should do this in linear time, on average. 
+
+Discussion / Solution: On average, we can get O(n) time and constant space. However, if the list is sorted, performing quicksort takes O(n^2) time. So the idea of the algorithm
+is to use quicksort's pivot method. It takes a pivot element and puts it in the correct position by doing n comparisons. The idea is to use this method iteratively. Note that 
+this method should return the index in where the pivot goes; we define the pivot to be at the 0th position initially. We use this method with left = 0, right = len(array) - 1. If 
+the returned index is equal to k-1, we're done. If index is more than k-1, move the right pointer to index - 1. Otherwise, the left pointer gets move to index + 1. 
