@@ -6,11 +6,12 @@ def quickselect(array, k):
 	while True:
 		idx = partition(array, left, right)
 		if idx == k-1:
-			return array[idx]
+			break
 		elif idx > k-1:
 			right = idx-1
 		else:
 			left = idx+1
+	return array[idx]
 	
 def partition(array, left, right):
 	if left == right:
@@ -28,5 +29,3 @@ def partition(array, left, right):
 		array[first], array[last] = array[last], array[first]
 	array[left], array[last] = array[last], array[left]
 	return last 
-
-# For the worst case, we can initially check if the list is sorted or not by a linear scan. 
