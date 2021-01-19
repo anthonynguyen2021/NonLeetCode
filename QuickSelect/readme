@@ -6,3 +6,6 @@ Discussion / Solution: On average, we can get O(n) time and constant space. Howe
 is to use quicksort's pivot method. It takes a pivot element and puts it in the correct position by doing n comparisons. The idea is to use this method iteratively. Note that 
 this method should return the index in where the pivot goes; we define the pivot to be at the 0th position initially. We use this method with left = 0, right = len(array) - 1. If 
 the returned index is equal to k-1, we're done. If index is more than k-1, move the right pointer to index - 1. Otherwise, the left pointer gets move to index + 1. 
+
+To see why time is T(n) = O(n), we run the helper method partition once in O(n). If the index isn't k-1, we check left or right depending on the value of index. We run the method, which is 
+done in O(n/2) time. So we have n + (n/2) + (n/4) + ... + 1. We know that the geometric series (1 + 0.5 + 0.5^2 + .... ) = 1 / (1 - 0.5) = 2, so we have O(n) time. 
