@@ -1,1 +1,6 @@
-Update...
+Write a class that supports the following:
+
+a) Continuous insertion of numbers with an inserst method which computes the median of all numbers inserted so far.
+b) The instant O(1) retrieval of the median of all numbers inserted so far by a getMedian method. 
+
+A median of list of numbers x_1, ..., x_n (assuming this list is sorted) is the middle number; if there's no middle number, average the middle two.
