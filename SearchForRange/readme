@@ -1,0 +1,7 @@
+Write a function that takes in an array of sorted elements (not necessarily distinct) and a target and returns an ordered pair (a, b) so that 
+array[a], ....., array[b] equals target. 
+
+Idea of solution: A brute force solution is to scan the list from left to right and keep track of the first instance of target and the last instance of target. This solution
+however takes time O(n) with no auxillary space. We ask if we can do better than this. One thing we can strive for is time O(log n). This suggests a binary search like algorithm.
+We just modify it. The idea is to run two instances of the modified binary search where if the midpoint points to the target, then we move the right pointer to the left of the 
+midpoint and keep going if we're looking for the left index. For the other case, we move the left index to the right of the middle index. 
