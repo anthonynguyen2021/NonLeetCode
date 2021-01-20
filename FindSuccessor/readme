@@ -1,2 +1,6 @@
 Write a function that takesin a Binary Tree (where each node will have a parent attribute) as well as a node contained in that tree and returns the given node's successor. 
 By node's successor, we mean the next node in the in-order tree traversal. 
+
+Idea: If the node has a right child R, that may be next in line if it has no left-subtree. Otherwise, we must look at the left most child in R. Now, suppospe node has no right child.
+Set current to be node. If current has no parent, return None. If current is equal to current.parent.left, return current.parent. Otherwise, set current = current.parent. In the end, 
+return current (depending on your implementation). See the diagram for inspriation. 
