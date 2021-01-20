@@ -5,6 +5,9 @@ class BinaryTree:
         self.left = left
         self.right = right
         self.parent = parent
+	
+# Idea: Use extra space to store the in-order traversal of the tree. Go through the list and if we see node, return the next in the list. We append None at the end to avoid
+# an edge case and makes our code easier to read. 
 
 # Time / Space Analysis
 # Time = O(n)
