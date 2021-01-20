@@ -1,0 +1,2 @@
+Write a function that takes in a string and returns the largest substring without duplicates. We assume there is exactly one such substring. By substring
+we mean contiguous characters in the string. 
