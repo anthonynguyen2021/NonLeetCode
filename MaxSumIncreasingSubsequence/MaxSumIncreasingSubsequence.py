@@ -1,23 +1,28 @@
-# Time = O(n^2) from double loop
-# Space = O(n) since we're storing subsequence, index, and buildSubsequence method. 
+# The approach is to use DP and at each index idx of largestSubsequence, it solves the largest subsequence sum that contains array[idx]. 
+# Initially largestSubsequence[idx] = array[idx]. At each idx, we loop through j in 0, ... , idx - 1 and see if array[j] < array[idx] (strictly increasing) and 
+# largestSubsequence[j] + array[idx] >= largestSubsequence[i] (we found a larger subsequence sum). We update the largest subsequence seen at index idx and store index j in 
+# another array to denote the previous term in the subsequence is j.
+
+# Time = O(n^2) due to double for loop
+# Space = O(n) due to storage from largestSubsequence, subsequenceIdx, and the helper method buildSubsequence.
 def maxSumIncreasingSubsequence(array):
-    subsequence = array[:]
-	index = [None for x in array]
-	largest = 0
+	largestSubsequence = array[:]
+	subsequenceIdx = [None for _ in array]
+	largestIdx = 0
 	for i in range(len(array)):
 		currVal = array[i]
 		for j in range(0, i):
 			oldVal = array[j]
-			if oldVal < currVal and currVal + subsequence[j] >= subsequence[i]:
-				subsequence[i] = currVal + subsequence[j]
-				index[i] = j
-		if subsequence[i] >= subsequence[largest]:
-			largest = i
-	return [subsequence[largest], buildSubsequence(array, index, largest)]
+			if oldVal < currVal and currVal + largestSubsequence[j] >= largestSubsequence[i]:
+				largestSubsequence[i] = currVal + largestSubsequence[j]
+				subsequenceIdx[i] = j
+		if largestSubsequence[i] >= largestSubsequence[largestIdx]:
+			largestIdx = i
+	return [largestSubsequence[largestIdx], buildSubsequence(array, subsequenceIdx, largestIdx)]
 
-def buildSubsequence(array, index, current):
+def buildSubsequence(array, subsequenceIdx, current):
 	subsequence = []
 	while current != None:
 		subsequence.append(array[current])
-		current = index[current]
+		current = subsequenceIdx[current]
 	return list(reversed(subsequence))
