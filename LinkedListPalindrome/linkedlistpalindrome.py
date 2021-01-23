@@ -10,7 +10,7 @@ class LinkedList:
         self.next = None
 
 # Time = O(n)
-# space = O(n)
+# space = O(1)
 def linkedListPalindrome(head):
     slow = head
 	fast = head 
