@@ -1,3 +1,6 @@
+# Time = O(n)
+# Space = O(1)
+# Solution Idea: We use bucket sort. We count how many times order[0], order[1],  order[2] occurs in array. Then we mutate the input array to reflect the sorted array.
 def threeNumberSort(array, order):
   	bucketCount = dict()
 	bucketCount[0] = 0
