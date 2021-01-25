@@ -1,5 +1,5 @@
 def threeNumberSort(array, order):
-  bucketCount = dict()
+  	bucketCount = dict()
 	bucketCount[0] = 0
 	bucketCount[1] = 0
 	bucketCount[2] = 0
