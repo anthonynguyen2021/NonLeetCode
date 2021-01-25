@@ -1,3 +1,5 @@
 Write a function that takes in an array and another array of three distinct integers named order. Sort the array according to the array order. For instance, if 
 order = [0, 1, -1] and array = [1, 0, 0, -1, -1, 0, 1, 1], the output should be array = [0, 0, 0, 1, 1, 1, -1, -1]. 
 
+Do this without any auxillary space. You should mutate the input array. 
+
