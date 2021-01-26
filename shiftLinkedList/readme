@@ -1,0 +1,7 @@
+Write a function that takes in the head of a linked list and an integer k and returns the shifted linked list.
+
+Example 1: If k is a multiple of the linked list size, then return the head. 
+Example 2: 0 -> 1 -> 2 -> 3 -> 4 -> 5 and k = 2 returns 4 -> 5 -> 0 -> 1 -> 2 -> 3
+Example 3: 0 -> 1 -> 2 -> 3 -> 4 -> 5 and k = -2 returns 2 -> 3 -> 4 -> 5 -> 0 -> 1
+
+Constraints: k is an integer. 
