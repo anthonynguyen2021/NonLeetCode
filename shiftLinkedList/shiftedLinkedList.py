@@ -5,7 +5,12 @@
 # To get to the tail, you need to traverse the list. It's a good idea to keep track of the length of the list since k is an integer. We may need to make sure that
 # k is in the interval (-l, l) where l is the length of the list. Using this, we need to figure out how many steps from the head we need to take to get to the new tail. 
 # We note that if k < 0, then we take -k-1 steps. If k > 0, we take l-k-1 steps. Try this on our test case to see. 
-# See line 17-23 to see this idea in action. 
+# See line 22-28 to see this idea in action. Line 27-28 can be viewed as moving the current node -k-1 times if k < 0. Otherwise, move n+1 -k-1 to get to the newTail where l = n+1.
+
+# General idea how to pick the number of steps:
+# 0 -> 1 -> .... -> n -> Null
+# If k > 0, we can think of the null node is the n+1 position. So we have (n+1) - k = n+ 1 - k position to get to the new head (we're using 0-based positioning). n+1 -k-1 for the new head.
+# If k < 0, we can march |k| to get to the new head. -k-1 to get to the new tail. 
 def shiftLinkedList(head, k):
     # Find length of linkedlist
 	length = 1
