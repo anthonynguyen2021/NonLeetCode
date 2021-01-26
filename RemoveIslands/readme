@@ -1,0 +1,2 @@
+You're given a 2D array of 0's and 1's. 1's represents black and 0's represent white. Write a function that removes all isliands of 1's, but any islands of 1's that connect to the border
+of the image is NOT to be removed. You may mutate the input array so that 1's is changed to 0s in the corresponding spots. 
