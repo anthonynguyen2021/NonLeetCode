@@ -1,0 +1,10 @@
+Write a function that takes in two strings and return its largest common subsequence. We may assume that there's 1 such common subseuqence. 
+
+Example: 
+
+str1 = "ZXVVYZW"
+str2 = "XKYKZPW"
+
+Output:
+
+["X", "Y", "Z", "W"]
