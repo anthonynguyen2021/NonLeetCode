@@ -3,6 +3,9 @@
 # Idea is to get a running product to the left and right of index idx. We initialize an array with 1s.
 # We populate the left running product first with a for loop. Next, we keep track of a right running product
 # from index len(array)-1, ... , 0 and multiply it to prod[idx].
+
+# Thinking: If we two arrays of size n where we keep track of the running products to the left of each index and to the right of each index, we're almost done. The solution is the
+# hadamard product of these two arrays. To do better, 1 auxillary array is needed. Form the left running product and think how you can do it without any additional expensive storage.
 def arrayOfProducts(array):
 	if len(array) == 1:
 		return array
