@@ -1,0 +1,1 @@
+Write a function that takes in a list of strings and returns a list of lists, where each list corresponds to a set of words that represent the same anagram.
