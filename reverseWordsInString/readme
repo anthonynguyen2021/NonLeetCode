@@ -1,0 +1,4 @@
+Write a function that takes in a string and reverses the string with the words not reversed. Ensure that the number of white spaces are preserved as well. Do this without built-in
+string methods except for join if you need to use it.
+
+Example: Input: "I am a newbie!", Output = "newbie! a am I".
