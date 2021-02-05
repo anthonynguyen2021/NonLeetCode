@@ -9,7 +9,7 @@ def reverseWordsInString(string):
 	words = []
 	for idx in range(len(string)):
 		char = string[idx]
-		
+		# The if elif statement doesn't execute means that we have a character in a word.
 		if char == " ":
 			words.append(string[startIdx:idx])
 			startIdx = idx
