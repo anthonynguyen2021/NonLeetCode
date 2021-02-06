@@ -1,1 +1,14 @@
-input later...
+You're given a non-empty array of positive integers each representing the amount of time that specific task takes to execute. Only one task can be executed at a time and we can execute
+the task in any order. A task's waiting time is the amount of time it must wait before its execution starts. For instance, the nth task waiting time is the sum
+of the first, ..., n-1 tasks. 
+
+For instance, given tasks [1, 4, 5] and we were to execute the tasks in the order [5, 1, 4], then we have 0 time waiting for first task. Second task takes 5 units. Last task takes 
+5 + 1 units. 
+
+You may mutate the input array.
+
+Example: tasks = [3, 2, 1, 2, 6]
+
+Output = 17.
+
+
