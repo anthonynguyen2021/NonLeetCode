@@ -1,1 +1,15 @@
-fill in
+Given a phonebook:
+
+1: 1
+2: abc
+3: def
+4: ghi
+5: jkl
+6: mno
+7: pqrs
+8: tuv
+9: wxyz
+0: 0
+
+and a phonenumber, say 312, we return all possible mnemonics. Using this example, we have the first character can be d, e, or f. The second charcter can be 1. The last can be a, b, or c.
+So there are 9 options. 'd1a' is one and the other 8 is generated similarly.
