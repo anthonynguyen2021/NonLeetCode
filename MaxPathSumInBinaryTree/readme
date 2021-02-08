@@ -1,0 +1,2 @@
+Given a binary tree whose node values can be negative, write a function that returns the largest sum from some path in the binary tree. A path in a tree is a sequence of nodes from
+Node A to B. The largest sum of a path in a tree is the sum of the nodal values in the path.
