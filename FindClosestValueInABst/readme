@@ -1,0 +1,2 @@
+Given a non-empty BST and a target (int value), find the closest node. By closest node, we mean the distance between the target and the nodal's value is the smallest out of 
+all of the BST's nodal values. You may assume there's exactly one such value. 
