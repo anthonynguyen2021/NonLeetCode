@@ -1,1 +1,5 @@
-Input later....
+Write a function that takes in a non-empty string and returns its run-length encoding.
+
+Eg: For instance, AAA returns 3A. AAAAAAAAAAAA (12 A) returns 9A3A. Any characters with > 9 consecutive characters are broken up this way. 
+
+Example: string = "AAAAAAAAAAAAABBCCCCDD" returns "9A4A2B4C2D". 
