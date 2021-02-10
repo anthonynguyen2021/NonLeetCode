@@ -1,1 +1,11 @@
-input later...
+You're given two positive integers representing the height of a staircase and the max number of steps that you can move up to the staircase at a time. Write a function
+that returns the number of ways in which you can climb the staircase.
+
+For example: height = 3, maxSteps = 2, you could climb the staircase in 3 ways - you step once and solve the case when height = 2 or step twice and solve when height = 1.
+You step the following way: 1, 1, 1; 2, 1; 1, 2
+
+We assume that maxSteps <= height. 
+
+Example: height = 4, maxStep = 2. Output = 5.
+
+Solution: 1, 1, 1, 1; 1, 1, 2; 1, 2, 1; 2, 1, 1; 2, 2.
