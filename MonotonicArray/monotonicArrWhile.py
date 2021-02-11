@@ -15,3 +15,16 @@ def isMonotonic(array):
 	if idx+1 < len(array):
 		decrease = False
 	return increase or decrease
+
+# Time = O(n)
+# Space = O(1)
+def isMonotonic(array):
+    increase, decrease = True, True
+	idx = 0
+	while idx+1 < len(array):
+		if array[idx] > array[idx+1]:
+			increase = False
+		if array[idx] < array[idx+1]:
+			decrease = False
+		idx += 1
+	return increase or decrease
