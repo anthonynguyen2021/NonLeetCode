@@ -1,0 +1,2 @@
+Given a binary tree, you are given three inputs: Ancestor, Descendent1, Descendant2. In each class instance of a node, you can access its ancestor. For Ancestor, the ancestor 
+attribute is empty. 
