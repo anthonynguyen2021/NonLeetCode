@@ -8,6 +8,8 @@
 # we check the right half and set left = middle+1. The other case is when the right half is sorted.
 # We check if target is in (array[middle], array[right]]. If so, set left = middle+1. If not, check the
 # left half and set right = middle-1.
+
+# Remark: Distinct integers is not necessary in which case we can adjust the code slightly below.
 def shiftedBinarySearch(array, target):
     left, right = 0, len(array)-1
 	while left <= right:
