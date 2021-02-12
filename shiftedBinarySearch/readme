@@ -1,0 +1,4 @@
+Write a function that takes in an array of distinct integer, is sorted (almost), and a target number. Return the index where the target number is or return -1. By almost sorted,
+the array is first sorted and then cyclicly shifted.
+
+Example: arr = [45, 61, 71, 72, 73, 0, 1, 21, 33, 37]. Target = 33. Output = 8.
