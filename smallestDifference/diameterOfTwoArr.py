@@ -4,7 +4,7 @@
 # Space = O(1)
 
 def smallestDifference(arrayOne, arrayTwo):
-  arrayOne.sort()
+  	arrayOne.sort()
 	arrayTwo.sort()
 	oneIdx = twoIdx = 0
 	smallestDistance = float('inf')
