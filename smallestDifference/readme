@@ -1,0 +1,2 @@
+Write a function that takes in two non-empty array of integers which returns a pair (one from each array) such that the distance is the smallest. We may assume there's one such pair. 
+You can this of  this mathematically is taking the argmin of the diameter of the two sets.
