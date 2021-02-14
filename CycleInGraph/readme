@@ -1,0 +1,2 @@
+Write a function that takes in an array of lists (each list corresponds to a node in the directed graph which is connected to the nodal values in the list) and returns if there 
+is a cycle in the graph or not.
