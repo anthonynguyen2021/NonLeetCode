@@ -2,7 +2,7 @@
 # Space = O(v)
 
 def cycleInGraph(edges):
-    visited = [False for node in edges]
+    	visited = [False for node in edges]
 	currentStack = [False for node in edges]
 	for i in range(len(edges)):
 		if visited[i]:
