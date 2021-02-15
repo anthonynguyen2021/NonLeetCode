@@ -1,5 +1,7 @@
 WHITE, BLACK, GREY = 0, 1, 2
 
+# Time = O(v + e)
+# Space = O(v)
 def cycleInGraph(edges):
     	visit = [WHITE for node in edges]
 	for idx in range(len(edges)):
