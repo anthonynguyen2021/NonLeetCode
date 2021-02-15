@@ -1,7 +1,7 @@
 WHITE, BLACK, GREY = 0, 1, 2
 
 def cycleInGraph(edges):
-    visit = [WHITE for node in edges]
+    	visit = [WHITE for node in edges]
 	for idx in range(len(edges)):
 		if visit[idx] != WHITE:
 			continue
