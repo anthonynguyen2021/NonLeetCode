@@ -5,7 +5,7 @@
 # Space = O(h) where h is the height of the tree
 
 def invertBinaryTree(tree):
-    if not tree:
+	if not tree:
 		return tree
 	tree.left, tree.right = tree.right, tree.left
 	invertBinaryTree(tree.left)
