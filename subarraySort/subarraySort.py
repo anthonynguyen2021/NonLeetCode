@@ -8,7 +8,7 @@
 # Space = O(1)
 
 def subarraySort(array):
-    smallest, largest = float('inf'), float('-inf')
+	smallest, largest = float('inf'), float('-inf')
 	for idx in range(0, len(array)-1):
 		if array[idx] > array[idx+1]:
 			smallest = min(smallest, array[idx+1])
