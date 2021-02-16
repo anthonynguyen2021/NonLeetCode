@@ -1,0 +1,5 @@
+Write a function that takes in an array of at least two integers and returns an array of starting & ending indices of the smallest
+array (contiguous) in the input array that needs to be sorted in place in order for the entire input array to be sorted (from smallest
+to largest). 
+
+If the input is already sorted, the function should return [-1, -1]. 
