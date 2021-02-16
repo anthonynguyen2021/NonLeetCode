@@ -1,1 +1,15 @@
-Input later.....
+Write a SuffixTrie class for a Suffix-Trie-like data structure (you can think of this Trie-like data structure as a forest). The class 
+should have a root property set to be the root nodne of the trie and should support:
+
+a) Creating the trie from a string; this will be done by calling the populateSuffixTrieFrom method upon class instantiation, which
+should populate the root of the class.
+
+b) Searching for strings in the trie. 
+
+Note that every string added to the trie should end with the special endSymbol character: "*".
+
+Example: Input - string = "babc". 
+
+Output = {"c": {"*": True}, "b" : {"c": {"*": True}, "a": {"b": {"c" : {"*": True}}}, }, "a": {"b": {"c": {"*": True}}}, }
+
+Input for searching: string = "abc" used for the above Trie. Output: True
