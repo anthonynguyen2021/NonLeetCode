@@ -12,14 +12,14 @@ class SuffixTrie:
 	# Space = O(n^2) where each character in the nested loop counts as storage.
     def populateSuffixTrieFrom(self, string):
         for i in range(len(string)):
-			current = self.root
-			for j in range(i, len(string)):
-				char = string[j]
-				if char not in current:
-					current[char] = {}
-				current = current[char]
-			current[self.endSymbol] = True
-		return self.root
+		current = self.root
+		for j in range(i, len(string)):
+			char = string[j]
+			if char not in current:
+				current[char] = {}
+			current = current[char]
+		current[self.endSymbol] = True
+	return self.root
 					
 			
 	
@@ -27,9 +27,9 @@ class SuffixTrie:
 	# Space = O(1)
     def contains(self, string):
         dictionary = self.root
-		for char in string:
-			if char in dictionary:
-				dictionary = dictionary[char]
-			else:
-				return False
-		return self.endSymbol in dictionary
+	for char in string:
+		if char in dictionary:
+			dictionary = dictionary[char]
+		else:
+			return False
+	return self.endSymbol in dictionary
