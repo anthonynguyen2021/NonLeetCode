@@ -12,7 +12,7 @@
 
 def longestPeak(array):
 	largestPeak = 0
-    for i in range(len(array)):
+	for i in range(len(array)):
 		peakLength = computePeak(array, i)
 		largestPeak = max(largestPeak, peakLength)
 	return largestPeak
