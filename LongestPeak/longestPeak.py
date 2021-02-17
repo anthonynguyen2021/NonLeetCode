@@ -6,7 +6,7 @@
 # Time = O(n) - At most, we'll traverse 6n times when calling computePeak helper method. To see this,
 # at index i, we  check array[i-1] < array[i], array[i] > array[i+1]. At index i-1, we check if 
 # array[i-1] < array[i]. At index i+1, we check if array[i] < array[i+1]. If index i is part of a peak
-# where it extends past index i+1 or before index i-1, we have to check array[i] twice. So O(6n).
+# where it extends past index i+1 or before index i-1, we have to check array[i] twice. So O(6n) = O(n).
 
 # Space = O(1) - We're just storing the largest peak size.
 
