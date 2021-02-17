@@ -1,1 +1,6 @@
-Input later....
+Given an array of positive integers representing the value of coins in your pocket, write a function the returns the minimumm amount of change (the minimum sum of money) that you CANNOT create.
+The given coins can have any positive integer value and aren't necessarily unique (i.e., you can have duplicates). We implicitly assume that we can't take a coin twice (only at most once)
+
+For instance, if you're given coins = [1, 2, 5], the minimum amount of change that you can't create is 4. If you're given no coins, the minimum amount of change that you can't create is 1.
+
+Example: coins = [5, 7, 1, 1, 2, 3, 22]. Output = 20. 
