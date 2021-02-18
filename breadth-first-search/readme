@@ -1,0 +1,15 @@
+You have a Node class which has a "name" and "children" attribute. We use the nodes to form a tree. 
+
+Implement the breadthFirstSearch method on the tree which takes in an empty array, traverse the tree using BFS approach, stores all the nodes' names in the input array, and returns it.
+
+Example:
+
+              A
+            / | \
+           B  C  D 
+         / \     / \
+        E   F    G  H
+           / \    \
+          I  J     K 
+          
+Output = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"].
