@@ -10,8 +10,8 @@ class Node:
     def addChild(self, name):
         self.children.append(Node(name))
         return self
-# Time = O(v + e)
-# Space = O(e) 
+# Time = O(v + e) - At each node, we push in all of its neighbors (all of its edges)
+# Space = O(v) - output is the number of vertices
     def breadthFirstSearch(self, array):
         queue = []
 	queue.append(self)
