@@ -14,10 +14,10 @@ class Node:
 # Space = O(e) 
     def breadthFirstSearch(self, array):
         queue = []
-		queue.append(self)
-		while queue:
-			currentNode = queue.pop(0)
-			array.append(currentNode.name)
-			for neighbor in currentNode.children:
-				queue.append(neighbor)
-		return array 
+	queue.append(self)
+	while queue:
+		currentNode = queue.pop(0)
+		array.append(currentNode.name)
+		for neighbor in currentNode.children:
+			queue.append(neighbor)
+	return array 
