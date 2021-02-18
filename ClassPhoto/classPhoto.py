@@ -2,7 +2,7 @@
 # Space = O(1)
 
 def classPhotos(redShirtHeights, blueShirtHeights):
-  redShirtHeights.sort()
+  	redShirtHeights.sort()
 	blueShirtHeights.sort()
 	blueLargest = False
 	if blueShirtHeights[-1] > redShirtHeights[-1]:
