@@ -6,7 +6,7 @@
 # Time = O(n^2)
 # Space = O(n) 
 def minNumberOfJumps(array):
-    numJumps = [float('inf') for val in array]
+    	numJumps = [float('inf') for val in array]
 	numJumps[0] = 0
 	for i in range(1, len(array)):
 		for j in range(0, i):
