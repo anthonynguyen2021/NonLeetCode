@@ -1,1 +1,10 @@
-Input later....
+You're given an array of integers. At each index i in {0, 1, ..., n-1}, array[i] represents the number of jumps.
+For instance, if array[i] = 3, this means at index i, you move forward by 3 to the right. If you reach the end
+and still have to move to the right, you wrap around the array. If you have a negative jump, this means you go 
+left instead. 
+
+Write a function that returns a boolean value whether the jumps in the array form a single cycle. A single
+cycle happens if, starting at any index in the array and the following the jumps, every element in the array
+is visited exactly once before landing back on the starting index. 
+
+Example: array = [2, 3, 1, -4, -4, 2]. Output = True
