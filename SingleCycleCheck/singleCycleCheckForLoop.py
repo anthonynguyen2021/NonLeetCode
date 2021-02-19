@@ -5,7 +5,7 @@
 # Space = O(1)
 
 def hasSingleCycle(array):
-    startingIdx = 0
+    	startingIdx = 0
 	for i in range(len(array)):
 		startingIdx = (startingIdx + array[startingIdx]) % len(array)
 		if i < len(array)-1 and startingIdx == 0:
