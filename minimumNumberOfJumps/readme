@@ -1,1 +1,2 @@
-Put in later....
+Write a function that takes in an array of positive integers where the positive integer represents the maximum number of steps you can take and returns the minimum jumps to get to the 
+final index. For instance, arr = [3, 4, 2, 1, 2], then at index 0, we can take maximum of three steps but a minimum of 1 step.
