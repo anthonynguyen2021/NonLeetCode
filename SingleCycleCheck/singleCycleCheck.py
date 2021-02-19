@@ -1,6 +1,6 @@
 # Idea of solution: Keep track of the number of visited nodes. If you get to the nth node, check to see
-# if the index == 0 (assuming you start at index = 0 with no loss in generality). Next, we need to
-# somehow check the following:
+# if the index == 0 (assuming you start at index = 0 with no loss in generality); potentially, we may have a cycle where all nodes are visited exactly once. 
+# We need to somehow check if nodes in between node 1, ..., node n are all distinct. Next, we need to somehow check the following:
 
 # Graph
 # 0 -> 1 -> 2 -> .... -> n  
@@ -13,7 +13,7 @@
 # Space = O(1)
 
 def hasSingleCycle(array):
-    startingIdx = 0
+    	startingIdx = 0
 	numberVisited = 0
 	while numberVisited < len(array):
 		if numberVisited > 0 and startingIdx == 0:
