@@ -4,11 +4,16 @@ class BST:
         self.value = value
         self.left = None
         self.right = None
+	
+# Idea of solution: The definition of BST is a binary tree where each node has the BST property. This can be done by recursion. The base case is when the node is empty.
+# For general tree node, if that node is a left child, you check if its value is strictly less than its parent's value (upper bound); you can set the lower bound to -infinity.
+# If the node is a right child, you check if its value is at least as great as its parent's value (lower bound); you can set the upper bound to be infinity. To start off the root,
+# set lower bound to be -infinity and upperbound to be infinity.
 
 # Time = O(n) where n is the number of nodes in the tree
 # Space = O(h) where h is the height of the tree
 def validateBst(tree):
-    return recursiveBSTcheck(tree, float('-inf'), float('inf'))
+    	return recursiveBSTcheck(tree, float('-inf'), float('inf'))
 
 def recursiveBSTcheck(tree, lower, upper):
 	if not tree:
