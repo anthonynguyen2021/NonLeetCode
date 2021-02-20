@@ -1,1 +1,17 @@
-Input later....
+You're given a class named "Node" that has 'name' and 'children' atrributes. We use a set of Node class instances to form a tree.
+
+Write a function that implements the depthFirstSearch function in the class Node, which takes in an empty array, traverse the 
+tree using the depth first search approach (specifically navigating the tree from left to right), stores all of the nodes' names 
+in the input arary, and returns it.
+
+Example: 
+
+Graph =             A
+                 /  |   \
+                B   C    D
+               / \      /  \
+              E   F    G    H
+                 / \    \
+                I   J    K
+                
+Output = ['A', 'B', 'E', 'F', 'I', 'J', 'C', 'D', 'G', 'K', 'H'].
