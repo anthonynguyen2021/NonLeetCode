@@ -10,10 +10,13 @@ class Node:
     def addChild(self, name):
         self.children.append(Node(name))
         return self
-	# Time = O(V + E)
-	# Space = O(V)
+
+	# Idea of Solution: 
+
+	# Time = O(V + E) - For each node you visit, you have to call the function on its children (which is the number of edges)
+	# Space = O(V) - return the array of all nodes visited in the dfs recursive visit approach.
     def depthFirstSearch(self, array):
         array.append(self.name)  # Assuming self is never empty
-		for child in self.children:
-			array = child.depthFirstSearch(array)
-		return array
+	for child in self.children:
+		array = child.depthFirstSearch(array)
+	return array
