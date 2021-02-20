@@ -11,7 +11,10 @@ class Node:
         self.children.append(Node(name))
         return self
 
-	# Idea of Solution: 
+	# Idea of Solution: We use a recursive approach. Push the current name in the array. Then call the function recursively
+	# on its children. In the method below, to understand what this dfs outputs, let suppose we're at a given tree node.
+	# Assume we have the current visited array, we visit everything including the current tree node using dfs; by visiting,
+	# we're adding to the array. We return that array.
 
 	# Time = O(V + E) - For each node you visit, you have to call the function on its children (which is the number of edges)
 	# Space = O(V) - return the array of all nodes visited in the dfs recursive visit approach.
