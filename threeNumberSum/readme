@@ -1,0 +1,5 @@
+Given an array of distinct integers and a target number, return an array three array entries (corresponding to distinct indices) that sum up to the target number. 
+
+Example: array = [12, 3, 1, -6, 5, -8, 6] & targetSum = 0.
+
+Output = [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]].
