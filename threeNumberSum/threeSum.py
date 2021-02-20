@@ -4,7 +4,7 @@ def threeNumberSum(array, targetSum):
 	if len(array) < 3:
 		return []
 	output = []
-    array.sort()
+ 	array.sort()
 	for i in range(len(array)-2):
 		left = i+1
 		right = len(array)-1
