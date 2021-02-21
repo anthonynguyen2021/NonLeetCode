@@ -1,0 +1,2 @@
+Write a function that takes in a binary tree and returns if the binary tree is height balanced. A binary tree is height balanced if at every node, the height of the left & right
+subtree differs by at most one. 
