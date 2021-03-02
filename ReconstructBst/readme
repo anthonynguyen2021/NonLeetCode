@@ -1,0 +1,1 @@
+Write a function that takes in an array of integers ordered in the pre-order traversal of a BST and creates the relevant BST and returns its root node.
