@@ -1,0 +1,5 @@
+Given a non-empty sorted array of integers, return an array of the same length whose entries are squares of the original array in increasing order. 
+
+Example: Input = [1, 2, 3, 5, 6, 8, 9]. Output = [1, 4, 9, 25, 36, 67, 81].
+
+Careful: We can have negative values. 
