@@ -1,7 +1,7 @@
 # Time = O(m+n) where m is the length of characters and n is the length of document
 # Space = O(m+n)
 def generateDocument(characters, document):
-    hashMapFrequency = {}
+	hashMapFrequency = {}
 	for char in characters:
 		if char in hashMapFrequency:
 			hashMapFrequency[char] += 1
