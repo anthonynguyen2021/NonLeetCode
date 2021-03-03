@@ -1,7 +1,11 @@
+# Idea of Solution: Worst case, we have integers that have negative and positive integers. Imagine we partition the array into negative and positive parts. For the negative
+# entries array, imagine that we flip it and absolute value the entries. Now, it's clear that we can figure out what the ith entry of the output array, since we have
+# a two pointer approach for the negative array and positive array. For the smaller one in absolute value, we insert the square of that in the next entry of the output array.
+
 # Time = O(n)
 # Space = O(n)
 def sortedSquaredArray(array):
-    idx = 0
+    	idx = 0
 	
 	while idx < len(array) and array[idx] < 0:
 		idx += 1
