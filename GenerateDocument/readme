@@ -1,1 +1,7 @@
-Fix later....
+Write a function that takes in two strings of characters named characters and document, respectively, and you want to find out if you use the symbols in characters to generate the
+symbols in document. Note that if document has 4 instances of 'a' and characters has 3 instances of 'a', you return false. 
+
+The document you're trying to create may contain any charaters, including special characteres, capital letters, numbers, and spaces. Note that you can always generate the empty string 
+"". 
+
+Example: characters = "Bste!hetsi ogEAxpelrt x ", document = "AlgoExpert is the Best!". Output: True. 
