@@ -1,3 +1,5 @@
+# Idea (motivation) of solution: 
+
 # Time = O(m+n) where m is the length of characters and n is the length of document
 # Space = O(m+n)
 def generateDocument(characters, document):
