@@ -1,0 +1,7 @@
+Given a BST and a positive integer k, the function should return the kth largest intger contained in the BST. 
+
+We may assume that there are only integer values in the BST and that k <= # nodes in the BST. 
+
+For the sake of this problem, we may assume that 2nd largest of {5, 7, 7} is 7. 
+
+Our definition of a node is a BST node if the node's value is more than all of its left subtree nodal values and less than or equal to all of its right subtree nodal values. 
