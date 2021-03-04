@@ -4,11 +4,14 @@ class BST:
         self.value = value
         self.left = left
         self.right = right
+	
+# Idea of solution: When we traverse a BST in the in-order traversal way, the resulting visited nodes are sorted. We store the list of visited values and look at 
+# the len(array)-k index for the kth largest. 
 
-# Time = O(n)
-# Space = O(n)
+# Time = O(n) - traverse through the tree is n nodes.
+# Space = O(n) - store all the node values in the BST. 
 def findKthLargestValueInBst(tree, k):
-    inOrderTraversal = []
+    	inOrderTraversal = []
 	inOrderBST(tree, inOrderTraversal)
 	return inOrderTraversal[len(inOrderTraversal)-k]
 
