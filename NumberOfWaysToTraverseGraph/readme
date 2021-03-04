@@ -1,1 +1,14 @@
+You are given two positive integers representing the width and height of a rectangular lattice. Write a function that returns the number of ways to reach the bottom right corner of the lattice
+when starting at the top left. Each move, you can only move down or right. 
 
+Example: width = 2, height = 3, our grid looks like this
+
+x-x
+| |
+x-x
+| |
+x-x
+
+Note that x is where you can stand. This has 3 possible moves. 
+
+We may assume that width * height >= 2. So you can never have a grid of 1x1.
