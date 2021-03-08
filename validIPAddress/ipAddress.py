@@ -27,4 +27,24 @@ def validString(string):
 	intOfString = int(string)
 	if intOfString > 255:
 		return False
-	return len(string) == len(str(int(string)))
+	return len(string) == len(str(int(string)))  # Think string '0' and '00' where int('00') = 0
+
+# Alternate way of defining validation of valid segment of IP address.
+def validString(string):
+	intOfString = int(string)
+	if intOfString > 255:
+		return False
+	if len(string) == 0:
+		return False
+	if len(string) == 1:
+		return True
+	elif len(string) == 2:
+		if string[0] == '0':
+			return False
+		else:
+			return True
+	elif len(string) == 3:
+		if string[0] == '0':
+			return False
+		else:
+			return True
