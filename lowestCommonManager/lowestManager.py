@@ -1,7 +1,7 @@
 # Time = O(n)
 # Space = O(h) where h is the height of the tree
 def getLowestCommonManager(topManager, reportOne, reportTwo):
-    return getLowestManager(topManager, reportOne, reportTwo).lowestManager
+    	return getLowestManager(topManager, reportOne, reportTwo).lowestManager
 
 def getLowestManager(manager, reportOne, reportTwo):
 	numDocuments = 0
