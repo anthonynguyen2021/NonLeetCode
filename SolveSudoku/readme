@@ -1,1 +1,4 @@
-Input later....
+You're given a 2D-array that represents a 9x9 partially filled Sudoku board. Write a function that returns the solved Sudoku board. Every entry of the board is a number
+from 0-9 where 0 represents an empty spot. 
+
+Note: You may modify the input array and there will always be exactly one solution to each input Sudoku board. 
