@@ -1,6 +1,7 @@
 # Idea Solution: 
 
-# Time = O(1) | Space = O(1)
+# Time = O(1) | Space = O(1) - the board is always a 9x9 so the amount of computation is always the same. The only additional storage is through the call stack, which is always
+# constant. 
 def solveSudoku(board):
 	solvePartialSudoku(0, 0, board)
     	return board
