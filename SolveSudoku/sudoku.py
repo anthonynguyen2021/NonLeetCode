@@ -1,3 +1,5 @@
+# Idea Solution: 
+
 # Time = O(1) | Space = O(1)
 def solveSudoku(board):
 	solvePartialSudoku(0, 0, board)
