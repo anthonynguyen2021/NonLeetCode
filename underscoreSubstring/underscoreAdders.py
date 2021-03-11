@@ -1,7 +1,7 @@
 # Time = O(n+m)
 # Space = O(n)
 def underscorifySubstring(string, substring):
-    location = mergeOverlappingSubstring(getIntervalsUnderscore(string, substring))
+    	location = mergeOverlappingSubstring(getIntervalsUnderscore(string, substring))
 	return insertUnderscoreAtLocation(string, location)
 
 def getIntervalsUnderscore(string, substring):
