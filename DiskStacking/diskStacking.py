@@ -1,5 +1,7 @@
-# Time = O(n^2)
-# Space = O(n) 
+# Explanation of solution: 
+
+# Time = O(n^2) - follows from the two nested for loops; everything else is done in constant time. Note that sorting iss just O(nlogn)
+# Space = O(n) - heights, sequences, and buildSequences are all O(n).
 def diskStacking(disks):
 	# We ask the interviewer if we need to make a copy of disks if we sort its 3rd element
 	disks.sort(key = lambda disc : disc[2])
