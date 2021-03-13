@@ -3,7 +3,7 @@ import heapq
 # Time = O(k + nlogk)
 # Space = O(k)
 def sortKSortedArray(array, k):
-    firstK = array[:min(k+1, len(array))]
+    	firstK = array[:min(k+1, len(array))]
 	heapq.heapify(firstK)
 	idxToInsert = 0
 	for idx in range(k+1, len(array)):
