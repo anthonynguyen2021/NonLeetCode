@@ -1,0 +1,10 @@
+Write a function that takes in a non-negative integer k and a k-sorted array of integers and returns the sorted version of the array.
+Your function can either sort the array or create an entirely new array.
+
+A k-sorted array is a partially sorted array in which all elements are at most k positions away from their sorted position. For example, the array [3, 1, 2, 2] is
+k-sorted with k = 3 since each element in the array is within 3 index position away from its sorted position. 
+
+Remark: You're expected to come up with an algorithm that can sort the k-sorted array faster than in O(n log (n)) time. 
+
+Example: array = [3, 2, 1, 5, 4, 7, 6, 5] and k = 3. 
+Output = [1, 2, 3, 4, 5, 5, 6, 7]. 
