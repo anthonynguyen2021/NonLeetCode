@@ -1,0 +1,3 @@
+For the purpose of this problem, let there be a 1-1 mapping from '[' to the string '<div>' and ']' to the string '</div>'. Now given
+a positive integer n, return a list of all valid brackets you can generate using exactly n '[' and n ']' where at position i in
+1, .... , 2n; there are more or the same of '[' compared to ']' for positions 1, ...., i - see open bracket problem in Leetcode. 
