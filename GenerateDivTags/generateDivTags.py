@@ -2,6 +2,15 @@
 # valid brackets in this problem using n symbols of '[' and ']'. For the space complexity, we have that '[' and ']' corresponds to
 # '<div>' and '</div>', respectively. But they consists of 11 characters for each valid enclosure. So S(n) = T(n) * 11n = T(n) * n.
 
+# Understanding the logic of this problem: Image you're at left = m and right = n.
+#                       (m, n)
+#                      /      \
+#                   (m-1, n)   (m, n-1)
+# 
+# We do the right branch if m < n, which means that we used more of the '<div>' symbols than '</div>'. The left branch means
+# As long as m > 0, we call the function on the left branch. In the recursive function at (m, n) and call it again on (m-1, n) and
+# (m, n-1) whenever possible. Note that when n = 0, these two cases do not activate.
+
 # Time = O((2n)! / n!^2 * (n+1)) | Space = T(n) * 11n
 def generateDivTags(numberOfTags):
     	listMatchedTags = []
