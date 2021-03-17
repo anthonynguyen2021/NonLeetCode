@@ -1,4 +1,6 @@
-# Time = O() | Space = O()
+# Explanation: 
+# Time = O(n^3 + lm) | Space = O(n+ lm) where n is the length of pi, m is the length of numbers and l is the expected value of the length of numbers.
+
 def numbersInPi(pi, numbers):
     	setNumbers = {number for number in numbers}
 	cache = {}
