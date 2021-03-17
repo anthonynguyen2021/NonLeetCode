@@ -1,3 +1,5 @@
+# Idea: Suppose pi[:i] is in numbers and we can solve pi[i:]. Then we store this as a potential number of spaces to divide pi. Do this for each i in {0, ..., len(pi)-1}. 
+
 # Explanation: The idea of the recursive function does the following: Looking at substring of pi from index i to the end, we compute the smallest partition size so each part
 # is in numbers. Note that at index 0, you look at substring pi[0:0+1], pi[0:1+1], ...., pi[0:len(pi)]. At index 1, you look at pi[1:1+1], pi[1:2+1], ..., pi[1:len(pi)], and so on.
 # For each index, we have n^2, (n-1)^2, ... , 1^2 such substrings of pi. This sums to O(n^3). Note that at index 0, you'll call the function once in the main function. At index 1,
