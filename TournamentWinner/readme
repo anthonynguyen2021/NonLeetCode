@@ -1,0 +1,8 @@
+We are given an array of pairs and an array of 0's or 1's - competitions = ['HTML', 'C#'], ['C#', 'Python'], ['Python', 'HTML']] and 
+results = [0, 0, 1]. For index 0, this means between 'HTML' and 'C#' in competitions[0], 'C#' wins since results[0] = 0. If
+results[0] = 1, we have 'HTML' wins. To abstract this further, suppose results[i] = x where x in {0, 1}. We have
+competitions[i][0] wins if results[i] = 1. Otherwise, competitions[i][1] wins if results[i] = 0. If a team wins, they're awarded a point.
+Otherwise, they are awared 0 points.
+
+Now write a function that takes in the array competitions - a list of pairs - and an array of results - 0 and 1 valued - and returns the 
+winner.
