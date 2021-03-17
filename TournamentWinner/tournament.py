@@ -1,6 +1,9 @@
-# Time O(n) | Space O(k)
+# Idea of solution: Keep track of how many points each team has as we go through each game and see the results from the result array.
+# We would want to keep a counter of the largest number of points seen and store the team name with those points.
+
+# Time O(n) | Space O(k) where k is the number of distinct teams
 def tournamentWinner(competitions, results):
-    hashmap = {}
+	hashmap = {}
 	largestSeen = float('-inf')
 	winnerID = "None"
 	for i in range(len(results)):
