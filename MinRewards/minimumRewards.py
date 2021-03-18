@@ -1,4 +1,4 @@
-# Time = O(n) | Space = O(n)
+# Time = O(n^2) | Space = O(n)
 def minRewards(scores):
 	rewards = [1 for _ in scores]
 	for i in range(1, len(scores)):
