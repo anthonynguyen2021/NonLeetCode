@@ -4,7 +4,7 @@ def minRewards(scores):
 		return 1
 	elif len(scores) == 2:
 		return 3
-    rewards = [1 for _ in scores]
+    	rewards = [1 for _ in scores]
 	localMinIdx = getLocalMinIdx(scores)
 	for index in localMinIdx:
 		addRewardsLocalMin(scores, rewards, index)
