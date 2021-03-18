@@ -1,1 +1,15 @@
-Input later...
+Minimum Rewards
+
+Imagine you have an array of test scores (distinct) corresponding to each student. You decide to reward the students on the following
+two rules:
+
+1. All sutdents must receive at least one reward.
+
+2. If student i has a higher score than student i+1, student i has strictly more rewards than student i+1. Conversely, if student i has a lower score
+than student i+1, student i has strictly less rewards than student i+1.
+
+Write a function that takes in a list of scores and returns the minimum number of rewards that you must give out to students to satisfy the 
+two rules.
+
+Input: scores = [8, 4, 2, 1, 3, 6, 7, 9, 5]
+Output: 25  # corresponds to rewards: [4, 3, 2, 1, 2, 3, 4, 5, 1].
