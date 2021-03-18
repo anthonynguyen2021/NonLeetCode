@@ -4,7 +4,7 @@ def minRewards(scores):
 		return 1
 	elif len(scores) == 2:
 		return 3
-    rewards = [1 for _ in scores]
+    	rewards = [1 for _ in scores]
 	for i in range(1, len(scores)):
 		if scores[i] > scores[i-1]:
 			rewards[i] = rewards[i-1] + 1
