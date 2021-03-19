@@ -20,7 +20,7 @@ def palindromePartitioningMinCuts(string):
 	for i in range(len(string)):
 		for j in range(i, len(string)):
 			palindrome[i][j] = isPalindrome(string, i, j)
-    cuts = [float('inf') for char in string]
+    	cuts = [float('inf') for char in string]
 	cuts[0] = 0
 	for idx in range(1, len(string)):
 		if palindrome[0][idx]:
