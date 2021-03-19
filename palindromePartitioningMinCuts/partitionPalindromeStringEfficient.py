@@ -11,7 +11,7 @@ def palindromePartitioningMinCuts(string):
 			else:
 				if string[startIdx] == string[endIdx] and palindrome[startIdx+1][startIdx+(length-1)-1]:
 					palindrome[startIdx][endIdx] = True
-    cuts = [float('inf') for char in string]
+    	cuts = [float('inf') for char in string]
 	cuts[0] = 0
 	for idx in range(1, len(string)):
 		if palindrome[0][idx]:
