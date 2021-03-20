@@ -1,7 +1,7 @@
 # Time = O(nlogn)
 # Space = O(logn) - recursive calls
 def quickSort(array):
-    recurseQS(array, 0, len(array) - 1)
+	recurseQS(array, 0, len(array) - 1)
 	return array
 
 def recurseQS(array, left, right):
