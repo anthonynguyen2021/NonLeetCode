@@ -5,7 +5,7 @@
 # the pointers, we make a recursive call of the function. 
 
 def shiftedBinarySearch(array, target):
-    return helperShiftedBinarySearch(array, target, 0, len(array)-1)
+	return helperShiftedBinarySearch(array, target, 0, len(array)-1)
 
 def helperShiftedBinarySearch(array, target, left, right):
 	if left > right:
