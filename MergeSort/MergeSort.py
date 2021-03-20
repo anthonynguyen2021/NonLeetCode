@@ -1,7 +1,7 @@
 def mergeSort(array):
 	# Time = O(nlogn)
 	# Space = O(1) using linked list
-    if len(array) < 2:
+	if len(array) < 2:
 		return array
 	mid = len(array) // 2
 	left = mergeSort(array[:mid])
