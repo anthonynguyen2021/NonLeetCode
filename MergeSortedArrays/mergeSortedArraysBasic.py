@@ -10,7 +10,7 @@
 # k is the length of arrays. 
 # Time = O(kn) | Space = O(n + k)
 def mergeSortedArrays(arrays):
-    arrayKthMerge = []
+    	arrayKthMerge = []
 	arrayIdx = [0 for _ in range(len(arrays))]
 	while True:
 		smallestItemsToCheck = []
