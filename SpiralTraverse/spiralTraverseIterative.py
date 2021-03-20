@@ -9,7 +9,7 @@
 
 def spiralTraverse(array):
 	spiral = []
-    firstRow, firstCol = 0, 0
+	firstRow, firstCol = 0, 0
 	lastRow, lastCol = len(array)-1, len(array[0])-1
 	while firstRow <= lastRow and firstCol <= lastCol:
 		for idx in range(firstCol, lastCol+1):
