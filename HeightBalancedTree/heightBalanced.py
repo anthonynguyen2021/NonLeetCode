@@ -1,8 +1,8 @@
 class BinaryTree:
-    def __init__(self, value, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
+	def __init__(self, value, left=None, right=None):
+		self.value = value
+		self.left = left
+		self.right = right
 
 # Idea of solution: We build a helper recursive method that checks if the tree with root node starting at tree is height balanced (bool valued) and height.
 # The base case is an empty node where the height by default is -1 and is balanced. Suppose we're given a binary tree with root node tree. By induction, suppose the left subtree
