@@ -7,7 +7,7 @@ class LinkedList:
 # Time = O(n) where n is the length of the list
 # Space = O(1) no auxillary space.
 def findLoop(head):
-    slow = head.next
+    	slow = head.next
 	fast = head.next.next
 	while slow != fast:
 		slow = slow.next
