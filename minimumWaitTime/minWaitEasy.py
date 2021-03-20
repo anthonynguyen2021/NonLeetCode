@@ -4,7 +4,7 @@
 # Idea: At each tasks, add the current wait time to the total wait time.
 
 def minimumWaitingTime(queries):
-    queries.sort()
+	queries.sort()
 	currentWaitTime = 0
 	totalWaitTime = 0
 	for i in range(0, len(queries)):
