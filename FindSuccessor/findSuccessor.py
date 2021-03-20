@@ -1,10 +1,10 @@
 # This is an input class. Do not edit.
 class BinaryTree:
-    def __init__(self, value, left=None, right=None, parent=None):
-        self.value = value
-        self.left = left
-        self.right = right
-        self.parent = parent
+	def __init__(self, value, left=None, right=None, parent=None):
+		self.value = value
+		self.left = left
+		self.right = right
+		self.parent = parent
 
 # Note that we don't need the tree input, but it's nice to know that node can be
 # found by traversing tree
@@ -13,7 +13,7 @@ class BinaryTree:
 # Time = O(h) where h is the height of the binary tree
 # Space = O(1) 
 def findSuccessor(tree, node):
-    if node.right:
+	if node.right:
 		return getLeftMostChild(tree, node.right)
 	else:
 		return getNextParentInOrder(tree, node)
