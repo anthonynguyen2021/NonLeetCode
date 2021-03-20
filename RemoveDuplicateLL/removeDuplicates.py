@@ -1,8 +1,8 @@
 # This is an input class. Do not edit.
 class LinkedList:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+	def __init__(self, value):
+		self.value = value
+		self.next = None
 
 # Time = O(n)
 # Space = O(1)
@@ -13,7 +13,7 @@ class LinkedList:
 # equal, move the current <- current.next
 
 def removeDuplicatesFromLinkedList(linkedList):
-    current = linkedList
+	current = linkedList
 	while current:
 		while current.next and current.value == current.next.value:
 			current.next = current.next.next
