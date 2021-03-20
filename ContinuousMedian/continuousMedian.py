@@ -4,7 +4,7 @@ import heapq
 class ContinuousMedianHandler:
     def __init__(self):
         self.max_heap = []
-		self.min_heap = []
+	self.min_heap = []
         self.median = None
 
     def insert(self, number):
