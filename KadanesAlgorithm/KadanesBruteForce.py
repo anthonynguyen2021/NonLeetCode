@@ -5,7 +5,7 @@
 
 
 def kadanesAlgorithm(array):
-    largestSum = float('-inf')
+    	largestSum = float('-inf')
 	for i in range(len(array)):
 		for j in range(i, len(array)):
 			currentSum = sum(array[i:j+1])
