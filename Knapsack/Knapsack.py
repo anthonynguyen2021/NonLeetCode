@@ -1,7 +1,7 @@
 # Time = O(|items| capacity)
 # Space = O(|items| capacity)
 def knapsackProblem(items, capacity):
-    knapsack = [[False for i in range(0, capacity+1)] for j in range(len(items)+1)]
+    	knapsack = [[False for i in range(0, capacity+1)] for j in range(len(items)+1)]
 	for i in range(len(items)):
 		for j in range(1, capacity+1):
 			if items[i][1] <= j:
