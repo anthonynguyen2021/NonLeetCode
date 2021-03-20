@@ -6,9 +6,9 @@
 # Space = O(1)
 
 def getYoungestCommonAncestor(topAncestor, descendantOne, descendantTwo):
-    distanceOne = getDistanceToAncestor(topAncestor, descendantOne)
+	distanceOne = getDistanceToAncestor(topAncestor, descendantOne)
 	distanceTwo = getDistanceToAncestor(topAncestor, descendantTwo)
-    while distanceOne > distanceTwo:
+	while distanceOne > distanceTwo:
 		distanceOne -= 1
 		descendantOne = descendantOne.ancestor
 	while distanceOne < distanceTwo:
