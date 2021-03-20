@@ -1,4 +1,7 @@
-# Explanation of solution: 
+# Explanation of solution: We solve this via DP. Sort the disk by their heights. We create heights array which has the same length as disks; at index i, we 
+# Solve the problem of the largest disk heights total including disks[i]. Sequence stores the previous disk on top of disk[i] (after sorting). We 
+# loop from disk 0, ..., len(disks) - 1; we check if heights[j] + 1 > heights[i], then we set heights[i] = heights[j]+1 and set sequence[i] = j for disk[j] to go on top of 
+# disk i. We do this for j in range(0, i).
 
 # Time = O(n^2) - follows from the two nested for loops; everything else is done in constant time. Note that sorting iss just O(nlogn)
 # Space = O(n) - heights, sequences, and buildSequences are all O(n).
