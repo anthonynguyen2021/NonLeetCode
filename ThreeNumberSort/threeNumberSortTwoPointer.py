@@ -4,7 +4,7 @@
 # the remaining elements order[0], order[1] using the two pointer approach. 
 
 def threeNumberSort(array, order):
-    moveLargest(array, order)
+	moveLargest(array, order)
 	twoNumberSort(array, order)
 	return array
 
