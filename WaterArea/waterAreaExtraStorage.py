@@ -6,7 +6,7 @@
 # Time = O(n)
 # Space = O(n)
 def waterArea(heights):
-    largestSeenLeft, largestSeenRight = [0 for _ in heights], [0 for _ in heights]
+	largestSeenLeft, largestSeenRight = [0 for _ in heights], [0 for _ in heights]
 	currentLargestLeft, currentLargestRight = 0, 0
 	for i in range(len(heights)):
 		largestSeenLeft[i] = currentLargestLeft
