@@ -13,7 +13,7 @@ class BinaryTree:
 
 
 def binaryTreeDiameter(tree):
-    diameter, height = buildDiameter(tree)
+    	diameter, height = buildDiameter(tree)
 	return diameter
 
 def buildDiameter(tree):
