@@ -1,8 +1,8 @@
 # This is an input class. Do not edit.
 class LinkedList:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+	def __init__(self, value):
+		self.value = value
+		self.next = None
 
 # Write a function that takes in the head of a singly linked list and an integer k and removes the kth
 # node from the end of the list. The removal should be done in place.
