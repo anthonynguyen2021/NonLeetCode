@@ -8,8 +8,8 @@
 # The isssue is that you deal with the case when nodes maybe negative. This is manifested in the base case of the method
 # buildMaxPathSum
 def maxPathSum(tree):
-    maxPathSumTree, maxHeightTree = buildMaxPathSum(tree)
-    return maxPathSumTree
+	maxPathSumTree, maxHeightTree = buildMaxPathSum(tree)
+	return maxPathSumTree
 
 def buildMaxPathSum(tree):
 	# Base case: Null node - observe the base case is crucial in getting test cases to work like single node -5
