@@ -1,6 +1,6 @@
 # Time = O(n^2) | Space = O(n)
 def longestIncreasingSubsequence(array):
-    longestSubsequence = [1 for _ in array]
+    	longestSubsequence = [1 for _ in array]
 	previousIdx = [None for _ in array]
 	largestIdx = 0
 	for i in range(1, len(array)):
