@@ -5,7 +5,7 @@
 # as we don't know if the value corresponding to the second pointer is order[2] or order[0] or not). This solution is nice since it does 1 pass through the array. 
 
 def threeNumberSort(array, order):
-    first, second, third = 0, 0, len(array) - 1
+	first, second, third = 0, 0, len(array) - 1
 	while second <= third:
 		currentValue = array[second]
 		
