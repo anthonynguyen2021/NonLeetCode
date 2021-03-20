@@ -32,6 +32,6 @@ class Manager:
 
 # This is an input class. Do not edit.
 class OrgChart:
-    def __init__(self, name):
-        self.name = name
-        self.directReports = []
+	def __init__(self, name):
+		self.name = name
+		self.directReports = []
