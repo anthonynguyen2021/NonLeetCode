@@ -6,7 +6,7 @@
 # Space = O(n) to store output
 
 def runLengthEncoding(string):
-    count = 1
+	count = 1
 	previous = string[0]
 	storeCharacters = []
 	for i in range(1, len(string)):
