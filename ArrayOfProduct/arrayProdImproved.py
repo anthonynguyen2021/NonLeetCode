@@ -4,7 +4,7 @@
 def arrayOfProducts(array):
 	if len(array) == 1:
 		return array
-    leftRunningSum = [1 for _ in array]
+    	leftRunningSum = [1 for _ in array]
 	rightRunningSum = [1 for _ in array]
 	for idx in range(1, len(array)):
 		leftRunningSum[idx] = leftRunningSum[idx-1] * array[idx-1]
