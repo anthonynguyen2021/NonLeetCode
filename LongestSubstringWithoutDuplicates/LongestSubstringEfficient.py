@@ -17,7 +17,7 @@ def longestSubstringWithoutDuplication(string):
 	startIdx = 0
 	seen = dict()
 	longest = [0, 1]
-    for i, char in enumerate(string):
+	for i, char in enumerate(string):
 		if char in seen:
 			startIdx = max(startIdx, seen[char]+1)
 		seen[char] = i  # The order of line 19 and 20 doesn't matter
