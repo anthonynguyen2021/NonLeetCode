@@ -4,7 +4,7 @@
 # Space = O(n)
 
 def reverseWordsInString(string):
-    characters = [char for char in string]
+	characters = [char for char in string]
 	reverseList(characters, 0, len(characters)-1)
 	startIdx = 0
 	while startIdx < len(characters):
