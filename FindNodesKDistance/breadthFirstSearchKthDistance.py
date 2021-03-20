@@ -1,9 +1,9 @@
 # This is an input class. Do not edit.
 class BinaryTree:
-    def __init__(self, value, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
+	def __init__(self, value, left=None, right=None):
+		self.value = value
+		self.left = left
+		self.right = right
 
 # Time = O(n) - BFS is O(v+e) = O(e) = O(n). dfs is O(n).
 # Space = O(n) - due to queue, parent nodes, and seen set.
