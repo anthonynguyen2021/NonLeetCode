@@ -11,7 +11,7 @@
 
 # Remark: Distinct integers is not necessary in which case we can adjust the code slightly below.
 def shiftedBinarySearch(array, target):
-    left, right = 0, len(array)-1
+	left, right = 0, len(array)-1
 	while left <= right:
 		middle = (left + right) // 2
 		if array[middle] ==  target:
