@@ -5,7 +5,7 @@
 # Time = O(n) where n is the length of the string
 # Space = O(n) 
 def reverseWordsInString(string):
-    startIdx = 0
+	startIdx = 0
 	words = []
 	for idx in range(len(string)):
 		char = string[idx]
