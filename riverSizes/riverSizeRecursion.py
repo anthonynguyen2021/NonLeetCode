@@ -3,7 +3,7 @@
 # Time = O(V + E) where V is the vertex size and E is the size of edge sets.
 # Space = O(V + E) 
 def riverSizes(matrix):
-    visited = [[False for _ in row] for row in matrix]
+	visited = [[False for _ in row] for row in matrix]
 	river = []
 	currentSize = [0]
 	for i in range(len(matrix)):
