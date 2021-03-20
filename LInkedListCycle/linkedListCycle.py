@@ -4,6 +4,9 @@
 #         self.val = x
 #         self.next = None
 
+# Idea of solution: Use a two pointer approach: A slow and fast pointer; slow pointer jumps by 1 and fast jumps by two. If the fast pointer because empty, return False. 
+# Otherwise, the fast will catch up with the slow. Draw a picture to see that at each step, the fast is 1 distance closer to the slow pointer.
+
 class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         # Time = O(n)
