@@ -8,7 +8,7 @@
 # You can think stepping k=n steps from height 0 to n is 1 way, so solution[0] = 1. You can also think solution[1] = 1 since solution[1] = solution[0] = 1.
 
 def staircaseTraversal(height, maxSteps):
-    return buildStairCaseSolution(height, maxSteps, {0:1, 1:1})
+	return buildStairCaseSolution(height, maxSteps, {0:1, 1:1})
 
 def buildStairCaseSolution(height, maxSteps, memoize):
 	if height in memoize:
