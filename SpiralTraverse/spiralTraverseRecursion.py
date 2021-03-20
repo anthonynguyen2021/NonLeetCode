@@ -9,7 +9,7 @@
 # case as this needs to be handled or else you'll double traverse (see below). Make sure your code runs
 # on the 2xn, nx2, 2x2 cases. 
 def spiralTraverse(array):
-    firstRow, lastRow, firstCol, lastCol = 0, len(array)-1, 0, len(array[0])-1
+	firstRow, lastRow, firstCol, lastCol = 0, len(array)-1, 0, len(array[0])-1
 	spiral = []
 	return recursiveTraversal(array, spiral, firstRow, lastRow, firstCol, lastCol)
 
