@@ -1,7 +1,7 @@
 # Time O(n) where n is the number of nodes in the binary tree
 # Space = O(h) where h is the height of the tree
 def nodeDepths(root):
-    return dfs(root, 0, 0)
+	return dfs(root, 0, 0)
 
 def dfs(root, depth, current):
 	if not root:
@@ -15,7 +15,7 @@ def dfs(root, depth, current):
 
 # This is the class of the input binary tree.
 class BinaryTree:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+	def __init__(self, value):
+		self.value = value
+		self.left = None
+		self.right = None
