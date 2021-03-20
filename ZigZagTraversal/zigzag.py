@@ -10,7 +10,7 @@
 # until the row == len(array) or col == len(array[0]).
 
 def zigzagTraverse(array):
-    goDown = True
+	goDown = True
 	row, col = 0, 0
 	zigzag = []
 	while row < len(array) and col < len(array[0]):
