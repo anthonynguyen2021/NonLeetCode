@@ -2,7 +2,7 @@
 # Space = O(1)
 def searchForRange(array, target):
 	goLeft = True
-    left = helperFindRange(array, target, goLeft)
+	left = helperFindRange(array, target, goLeft)
 	right = helperFindRange(array, target, False)
 	return [left, right]
 
