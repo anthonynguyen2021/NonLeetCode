@@ -10,7 +10,7 @@
 # if the largest sum is achieved. If so, record it. Next, if the current sum is negative, reset it to 0.
 
 def kadanesAlgorithm(array):
-    largestSum = float('-inf')
+    	largestSum = float('-inf')
 	currentSum = 0
 	for idx in range(len(array)):
 		currentSum += array[idx]
