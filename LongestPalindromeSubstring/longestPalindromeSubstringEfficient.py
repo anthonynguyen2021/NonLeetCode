@@ -1,8 +1,9 @@
+# Solutoin Idea: The idea is that each character is the center of the palindrome or characer i and i-1. 
+
 # Time = O(n^2) - for each character, we test for palindrome which is O(n).
 # Space = O(n) - returning the string
-# The idea is that each character is the center of the palindrome or characer i and i-1. 
 def longestPalindromicSubstring(string):
-    longestDict = {'size': 0, 'index': None}
+	longestDict = {'size': 0, 'index': None}
 	for i in range(len(string)):
 		testPalindrome(string, i, longestDict)
 	return string[longestDict['index'][0]:longestDict['index'][1]+1]
