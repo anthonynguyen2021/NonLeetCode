@@ -6,7 +6,7 @@
 # Space = O(wh) where the auxillary space comes from the stack in the DFS in the worst case.
 
 def removeIslands(matrix):
-    for row in range(len(matrix)):
+	for row in range(len(matrix)):
 		for col in range(len(matrix[0])):
 			isRow = (row == 0) or (row == len(matrix)-1)
 			isCol = (col == 0) or (col == len(matrix[0])-1)
