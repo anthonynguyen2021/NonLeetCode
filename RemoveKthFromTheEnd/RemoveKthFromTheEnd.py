@@ -13,7 +13,7 @@ class LinkedList:
 def removeKthNodeFromEnd(head, k):
 	# Time = O(n)
 	# Space = O(1)
-    # assume k in {1, ... , n}
+    	# assume k in {1, ... , n}
 	# linked list has length >= 2 and has at least k nodes
 	left = head 
 	right = head
