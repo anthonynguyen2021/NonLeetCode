@@ -5,10 +5,10 @@
 
 # This is an input class. Do not edit.
 class BST:
-    def __init__(self, value, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
+	def __init__(self, value, left=None, right=None):
+		self.value = value
+		self.left = left
+		self.right = right
 
 # Time = O(n^2) - The worst case is that we have a BST that's just unbalanced - think all nodes only have left children, no right children. So the for loop at each recursive call
 # gives us the sum of the first n integers roughly.
