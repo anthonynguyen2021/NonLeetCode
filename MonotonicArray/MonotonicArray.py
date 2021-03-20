@@ -1,7 +1,7 @@
 # Time = O(n)
 # Space = O(1)
 def isMonotonic(array):
-    increase = True
+    	increase = True
 	decrease = True
 	for idx in range(len(array)-1):
 		if array[idx] > array[idx+1]:
