@@ -8,7 +8,7 @@
 # and set current = current.left
 
 def findClosestValueInBst(tree, target):
-    smallestDistance = float('inf')
+   	smallestDistance = float('inf')
 	current = tree
 	while current:
 		if current.value == target:
@@ -24,7 +24,7 @@ def findClosestValueInBst(tree, target):
 
 # This is the class of the input tree. Do not edit.
 class BST:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    	def __init__(self, value):
+        	self.value = value
+        	self.left = None
+        	self.right = None
