@@ -3,7 +3,7 @@
 
 # Solution: The idea is that we perform a while loop to see when the increasingness / decreasingness are violated or not. We return these bool markers increase or decrease. 
 def isMonotonic(array):
-    increase, decrease = True, True
+	increase, decrease = True, True
 	idx = 0
 	while idx+1 < len(array) and array[idx] <= array[idx+1]:
 		idx += 1
@@ -19,7 +19,7 @@ def isMonotonic(array):
 # Time = O(n)
 # Space = O(1)
 def isMonotonic(array):
-    increase, decrease = True, True
+	increase, decrease = True, True
 	idx = 0
 	while idx+1 < len(array):
 		if array[idx] > array[idx+1]:
