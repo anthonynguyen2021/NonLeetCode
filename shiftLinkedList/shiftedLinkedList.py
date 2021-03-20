@@ -42,6 +42,6 @@ def shiftLinkedList(head, k):
 
 # This is the class of the input linked list.
 class LinkedList:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+	def __init__(self, value):
+		self.value = value
+		self.next = None
