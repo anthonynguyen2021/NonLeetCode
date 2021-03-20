@@ -5,14 +5,14 @@
 
 # This is an input class. Do not edit.
 class LinkedList:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+	def __init__(self, value):
+		self.value = value
+		self.next = None
 
 # Time = O(n)
 # space = O(1)
 def linkedListPalindrome(head):
-    slow = head
+    	slow = head
 	fast = head 
 	while fast and fast.next:
 		fast = fast.next.next
