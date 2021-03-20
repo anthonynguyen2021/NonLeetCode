@@ -15,4 +15,4 @@ def tournamentWinner(competitions, results):
 		if hashmap[winner] > largestSeen:
 			largestSeen = hashmap[winner]
 			winnerID = winner
-    return winnerID
+	return winnerID
