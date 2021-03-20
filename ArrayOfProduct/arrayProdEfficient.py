@@ -9,7 +9,7 @@
 def arrayOfProducts(array):
 	if len(array) == 1:
 		return array
-    product = [1 for _ in array]
+    	product = [1 for _ in array]
 	leftRunningProd = 1
 	for idx in range(len(array)):
 		product[idx] = leftRunningProd
