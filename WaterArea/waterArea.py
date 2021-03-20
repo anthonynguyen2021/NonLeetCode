@@ -7,7 +7,7 @@
 # much water there is at index i. Now, if we assume that heights[i] > 0, we add only when the water 
 # height is more than heights[i].
 def waterArea(heights):
-    if len(heights) < 3:
+	if len(heights) < 3:
 		return 0
 	totalWater = 0
 	for i in range(1, len(heights)-1):
