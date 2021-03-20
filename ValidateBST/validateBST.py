@@ -1,9 +1,9 @@
 # This is an input class. Do not edit.
 class BST:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+	def __init__(self, value):
+		self.value = value
+		self.left = None
+		self.right = None
 	
 # Idea of solution: The definition of BST is a binary tree where each node has the BST property. This can be done by recursion. The base case is when the node is empty.
 # For general tree node, if that node is a left child, you check if its value is strictly less than its parent's value (upper bound); the lower bound is its nearest ancestor where its a right child which you use that ancestor's parental value.
