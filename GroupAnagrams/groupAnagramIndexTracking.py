@@ -7,7 +7,7 @@
 # means we sort the strings in words and that corresponds to the indices being sorted by a key=lambda function
 # Space = O(w * n)
 def groupAnagrams(words):
-    if not words:
+	if not words:
 		return []
 	sortedWords = ["".join(sorted(word)) for word in words]
 	indices = [i for i in range(len(words))]
