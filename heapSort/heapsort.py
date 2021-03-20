@@ -1,7 +1,7 @@
 # Time = O(nlogn)
 # Space = O(1)
 def heapSort(array):
-    heapify(array)
+	heapify(array)
 	for idx in reversed(range(1, len(array))):
 		swap(array, 0, idx)
 		siftDown(array, 0, idx)  # excluding idx
