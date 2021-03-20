@@ -3,6 +3,6 @@
 # Time = O(nlog n)
 # Space = O(1)
 def sortedSquaredArray(array):
-    array = [val ** 2 for val in array]
+	array = [val ** 2 for val in array]
 	array.sort()
 	return array
