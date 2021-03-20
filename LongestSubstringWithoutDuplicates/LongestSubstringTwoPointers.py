@@ -6,7 +6,7 @@
 # the right pointer. If you haven't seen a duplicate, add it to the set. Then move the right pointer.
 # Now check if the length of the substring string[left:right] is the current largest or not. 
 def longestSubstringWithoutDuplication(string):
-    if not string:
+	if not string:
 		return ""
 	left = right = 0
 	longest = [0, 1]
