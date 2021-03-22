@@ -2,7 +2,9 @@
 # thing interchangably. When row == 2, previousRow, oddRow point to the same thing by how Python assigns previousRow = oddRowDP and currentRow, evenRowDP point to the same object.
 # Reread this if this solution seems strange.
 
-# Explanation of solution: In the previous solution, note that we only used the previous and current row of the DP build up. So two rows are only needed. 
+# Explanation of solution: In the previous solution, note that we only used the previous and current row of the DP build up. So two rows are only needed. The time is O(kn) because
+# we're looping through row in {1, ... , k} and for each row, we're looping over col in {1, ... , len(prices)-1}, which is O(kn). The space is O(n) since we're using two arrays of
+# lengths n.
 
 # Time = O(kn) | Space = O(n) where k and n are # of transactions and n = length of prices, respectively.
 def maxProfitWithKTransactions(prices, k):
