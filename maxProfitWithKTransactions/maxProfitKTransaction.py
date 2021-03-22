@@ -2,7 +2,7 @@
 def maxProfitWithKTransactions(prices, k):
 	if not len(prices):
 		return 0
-    buildDP = [[0 for _ in prices] for i in range(k+1)]
+    	buildDP = [[0 for _ in prices] for i in range(k+1)]
 	for row in range(1, k+1):
 		maxSeen = float('-inf')
 		for col in range(1, len(prices)):
