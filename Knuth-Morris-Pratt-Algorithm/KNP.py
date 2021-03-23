@@ -7,7 +7,8 @@
 
 # Note: We start with j = 0, i = 1 in the buildPatterns and NOT at i = j = 0 since we're looking for patterns at distinct indices.
 
-# Explanation - Space is O(m) to build patterns. For Time, to see why it's O(n+m), just think that we can't move j back more than we move i forward and i moves forward only.
+# Explanation - Space is O(m) to build patterns. For Time, to see why it's O(n+m), just think that we decrement j back the same number of times we move i forward and i moves forward only.
+# We can look up the proof later.
 # Time = O(n+m) time | O(m) space where n = len(string) and m = len(substring)
 def knuthMorrisPrattAlgorithm(string, substring):
     	pattern = buildPattern(substring)
