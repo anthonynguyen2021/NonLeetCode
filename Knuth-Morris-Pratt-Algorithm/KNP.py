@@ -3,7 +3,8 @@
 # we might want to start at the beginning so that pattern[j-1] = -1, so j = 0. Note the pattern at
 # index 0 is always -1. When substring at index j and i equal (prefix and suffix), increment both i, j. Otherwise, when j > 0, the pattern failed for 
 # substring at index j and i. So go back to index pattern[j-1] and the entry of substring at this index equals index i-1. But we move to index j = pattern[j-1]+1.
-# Otherwise, j = 0 and we have no patterns. Increment i. 
+# This part of the algorithm says when we decrement j to pattern[j-1]+1, we don't have to go to the beginning of substring and start at some portion of substring 
+# that has been matched already. Otherwise, j = 0 and we have no patterns. Increment i. 
 
 # Note: We start with j = 0, i = 1 in the buildPatterns and NOT at i = j = 0 since we're looking for patterns at distinct indices.
 
