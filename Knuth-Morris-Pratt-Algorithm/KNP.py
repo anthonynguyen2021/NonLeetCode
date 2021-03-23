@@ -1,6 +1,6 @@
 # Time = O(n+m) time | O(m) space where n = len(string) and m = len(substring)
 def knuthMorrisPrattAlgorithm(string, substring):
-    pattern = buildPattern(substring)
+    	pattern = buildPattern(substring)
 	return doesMatch(string, substring, pattern)
 
 def buildPattern(substring):
