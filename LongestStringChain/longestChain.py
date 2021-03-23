@@ -1,3 +1,11 @@
+# Idea of solution: If we can sort our array by size, this will make DP more obvious. Suppose for the sake of argument that
+# we have strings of size 1, 2, 3, ... , n. Then at string of length i, we can remove index 0, 1, ..., i-1 and see if the smaller
+# string is in our hashtable (which we constring for each string in strings) which has the largest chain seen so far for the 
+# smallest string and the next string it points to as part of the chain. By default, we set our max chain size to 1 and next points to
+# "".
+
+# Explanation of complexity: For space, stringChains is O(nm) where n is the length of strings and m is the largest length of the string
+# in strings. Also, sortedString is O(nm). At the end, building our longest chain is O(n * m).
 # Time = O(nlogn + nm^2) | Space = O(mn)
 def longestStringChain(strings):
 	stringChains = {}
