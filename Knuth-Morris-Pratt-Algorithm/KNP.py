@@ -23,6 +23,7 @@ def buildPattern(substring):
 			pattern[i] = j
 			i += 1
 			j += 1
+		# Check the previous point where index pattern[j-1] equals index i and we continue to check the substring at index pattern[j-1]+1
 		elif j > 0:
 			j = pattern[j-1] + 1
 		else:
