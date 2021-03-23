@@ -1,7 +1,7 @@
 # Explanation: This approach is built through DP. To see this, we have to solve this on the size of the string from index 0 to index i 
 # where i in {0, 1, ..., len(string)-1} and we name this solution DP as cuts array. For i = 0, we see it's 0. For general i, we have string[0:i+1] 
 # is a palindrome in which case we have 0 cuts. If not, we look at substring string[j:i+1] and see if it's a palindrome 
-# (we have a table look up for this). If it is, then we have cuts[i] = min(cuts[i], cuts[j-1]+1). We do this for j in {1, ... , i}.
+# (we have a table look up for this - memoization). If it is, then we have cuts[i] = min(cuts[i], cuts[j-1]+1). We do this for j in {1, ... , i}.
 # For the palindrome look up, we have a 2D matrix to do quick lookup for palindrome from index i to index j (including index j). So the rows indicate
 # starting at index i and column j indicates ending at index j. So (i, j) entry will compute if string[i:j+1] is a palindrome or not which is about O(n)
 # but less depending on i and j.
