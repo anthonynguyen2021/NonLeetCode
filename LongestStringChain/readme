@@ -1,1 +1,12 @@
-Input later ....
+Given a list of strings, write a function that returns the lonngest string chain that can be built from those strings. 
+
+A string chain is defined as follows: let string A be a string in the input array (type List[strings]); if removing a single character from string A
+yields another string B that lies in our input array, then strings A and B form a string chain of length 2. With this chain in mind, if
+removing a character from string B yields string C in the input array, then strings A, B, and C form a string chain of length 3.
+
+The funnction should return the string chain in descending order (i.e., from the longest string to the shortest one). Noe that
+string chains of length 1 doesn't exist; in other words, if removing a string's character doesn't yeild any string in our input array,
+then it has no chain by definition. If the list of strings doesn't contain any string chain of size 2 or more, the function should
+return an empty array.
+
+You can assume there will only be one longest string chain.
