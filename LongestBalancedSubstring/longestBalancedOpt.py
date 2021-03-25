@@ -1,4 +1,5 @@
-# Explanation of solution: This is similar to the balanced parenthesis problem using a stack except you initialize the stack with -1. If you ever pop this, this means that the previous few
+# Explanation of solution: This is similar to the balanced parenthesis problem using a stack except you initialize the stack with -1 - this works nicely on computing the current size of the balancced parenthesis. 
+# If you ever pop this, this means that the previous few
 # characters were unbalanced parenthesis, so we add index i to our current substring to check but not including. When we see a left parenthesis, push this in. If we see ")",
 # pop this out. If we get to length 0 stack, this means that before index i, we're done checking for max size of balanced string. We push i in and check substring from index i+1 and
 # on. If the length of the stack isn't 0, we successful have some matching parenthesis by popping the top of the stack, so let's measure the size of the current matching parenthesis 
@@ -24,6 +25,25 @@ def longestBalancedSubstring(string):
 				stackIdx.append(i)
 			else:
 				beginningIdx = stackIdx[-1]
+				lengthValidBracket = i - beginningIdx
+				maxLength = max(maxLength, lengthValidBracket)
+	return maxLength
+
+# Here's another solution where I've mixed it up using enumerate(string).
+
+# Time = O(n) | Space = O(n)
+def longestBalancedSubstring(string):
+	maxLength = 0
+    	stack = [-1]
+	for i, char in enumerate(string):
+		if char == "(":
+			stack.append(i)
+		else:
+			stack.pop()
+			if len(stack) == 0:
+				stack.append(i)
+			else:
+				beginningIdx = stack[-1]
 				lengthValidBracket = i - beginningIdx
 				maxLength = max(maxLength, lengthValidBracket)
 	return maxLength
