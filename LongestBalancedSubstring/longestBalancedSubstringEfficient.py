@@ -1,6 +1,6 @@
 # Time = O(n) | Space = O(1)
 def longestBalancedSubstring(string):
-    leftParenCount = rightParenCount = 0
+    	leftParenCount = rightParenCount = 0
 	maxCount = 0
 	for char in string:
 		if char == "(":
