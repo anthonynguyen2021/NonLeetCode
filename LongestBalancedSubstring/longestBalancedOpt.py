@@ -1,7 +1,10 @@
+# Explanation of solution:
+
+# Explanation: You look through the string which is O(n) time and the stack yields O(n) space.
 # Time = O(n) | Space = O(n)
 def longestBalancedSubstring(string):
 	maxLength = 0
-    stack = [-1]
+    	stack = [-1]
 	for i in range(len(string)):
 		if string[i] == "(":
 			stack.append(i)
