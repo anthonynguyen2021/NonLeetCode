@@ -1,5 +1,8 @@
+# Explanation: ...
+
+# Time = O(n) | Space = O(n)
 def shortenPath(path):
-    absolutePath = path[0] == "/"
+    	absolutePath = path[0] == "/"
 	tokens = filter(isValid, path.split("/"))
 	stack = []
 	if absolutePath:
