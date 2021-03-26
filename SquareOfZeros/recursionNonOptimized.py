@@ -3,7 +3,7 @@ def squareOfZeroes(matrix):
 	cache = {}
 	n = len(matrix)
 	
-    topRow = 0
+    	topRow = 0
 	bottomRow = n - 1
 	
 	leftCol = 0
