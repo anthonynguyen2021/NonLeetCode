@@ -7,6 +7,8 @@
 # TopRow+1, BottomRow, LeftCol+1, RightCol. The 5th square is when we all pull the corners simulatenously inward by 1 unit; so the square is 
 # TopRow+1, BottomRow-1, LeftCol+1, RightCol-1. Note that pulling all 4 corners and pulling 1 corner only, we can have repeat computations.
 
+# Remark: Note that in this function we wrote, we get every square ~ O(N^3) of them. Draw a picture to see.
+
 # Time Complexity explanation: Note that we have O(N^2) nodes in our matrix. For each of them - treated as the upper left hand corner of the square - and we look
 # at all the possible square sizes with that upper left hand corner index (i, j) which is O(N). For each of such square, it takes O(N) to compute if the boundaries
 # are all zeros. So O(N^3) squares. For the space, in the worst case, we store all O(N^3) squares in the hashmap, where the keys are 'r1-r2-c1-c2' for instance where
