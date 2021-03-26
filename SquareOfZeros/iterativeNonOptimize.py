@@ -1,7 +1,7 @@
 # Time = O(N^4) | Space = O(1)
 def squareOfZeroes(matrix):
 	n = len(matrix)
-    for topRow in range(0, n):
+    	for topRow in range(0, n):
 		for leftCol in range(0, n):
 			squareLength = 2
 			while topRow + (squareLength-1) < n and leftCol + (squareLength-1) < n:
