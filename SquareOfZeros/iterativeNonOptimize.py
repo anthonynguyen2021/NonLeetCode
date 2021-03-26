@@ -1,3 +1,9 @@
+# Explanation of solution: The idea is to go through all of the entries of the matrix at index (i, j), and check for candidate squares whose upper left hand corner
+# starts at index (i, j). From there, we look at square of size 2, ..., and so on until it's out of bounds - see while loop.
+
+# Explanation of complexities: Time comes from the two for loops which is O(n^2). The while loop will look at squares whose upper left hand corner is at index topRow and leftCol and increase the
+# size of squares until out of bounds, so this is O(n). Checking if the square has boundary of zeros, this is O(n) using a for-loop.
+
 # Time = O(N^4) | Space = O(1)
 def squareOfZeroes(matrix):
 	n = len(matrix)
