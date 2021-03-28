@@ -1,10 +1,19 @@
-# Time = O(n) | Space = O(h) where h is the height of the tree
+# Explanation: The idea is we traverse the tree in a post order traversal manner. We build a count on the number of nodes in the tree rooted at node via recursion. We build the count at
+# node by first building the count for node.left if it's not None and add that to the count of node where we initialize count to 1. We do the same by first building the count
+# for node.right. Then we add this count to node's count. Next, we build a recursive method that traverses the tree in a post order traversal and builds the sum of all node's depth
+# at the tree rooted at 'tree'. We initialize 'tree' to have depth 0. We build the depthTable for tree.left if it's not None. As part of the formula, we add tree.left's node count
+# and sum of all depth's of the tree rooted at tree.left to 'tree' with attribute sum of all nodes depth. We do the same for tree.right. Once we build this, we loop through
+# all the keys of depthTable and sum up depthTable[node] and return that value.
+
+# We visit each node and build the dictionaries for countTable and depthTable, so O(n) space and time. Buildsumofdepth funnction is O(n) in time, same with buildNumberOfNodes, and also
+# sumOfAllDepthsAtNodes.
+# Time = O(n) | Space = O(n) where n is the height of the tree
 def allKindsOfNodeDepths(root):
 	countTable = {}
 	depthTable = {}
 	buildNumberOfNodes(root, countTable)
 	buildSumOfDepths(root, depthTable, countTable)
-    return sumOfAllDepthsAtNodes(depthTable)
+    	return sumOfAllDepthsAtNodes(depthTable)
 
 def sumOfAllDepthsAtNodes(depthTable):
 	resultsSumAllDepths = 0
