@@ -1,13 +1,13 @@
 # This is the class of the input root. Do not edit it.
 class BinaryTree:
-    def __init__(self, value, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
+    	def __init__(self, value, left=None, right=None):
+		self.value = value
+		self.left = left
+		self.right = right
 
 # Time = O(n) | Space = O(d) where n is # of nodes in the tree and d is the depth of the tree.
 def flattenBinaryTree(root):
-    left, right = flatten(root)
+    	left, right = flatten(root)
 	return left
 
 def flatten(tree):
