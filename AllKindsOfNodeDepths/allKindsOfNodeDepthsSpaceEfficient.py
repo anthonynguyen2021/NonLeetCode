@@ -1,3 +1,7 @@
+# Solution Explanation:
+
+# Explanation of complexities:
+# Time = O(N) | Space = O(d) where d is the depth of the tree.
 def allKindsOfNodeDepths(root):
     	return getTreeInfo(root).totalSumOfDepths
 	
