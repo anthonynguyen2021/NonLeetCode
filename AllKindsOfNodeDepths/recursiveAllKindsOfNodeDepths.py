@@ -1,6 +1,6 @@
 # Time O(NlogN) | Space O(h) where h is the height of the tree
 def allKindsOfNodeDepths(root):
-    if not root:
+    	if not root:
 		return 0
 	return allKindsOfNodeDepths(root.left) + allKindsOfNodeDepths(root.right) + sumNodesDepth(root)
 
@@ -13,7 +13,7 @@ def sumNodesDepth(tree, depth=0):
 
 # This is the class of the input binary tree.
 class BinaryTree:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    	def __init__(self, value):
+        	self.value = value
+        	self.left = None
+        	self.right = None
