@@ -1,5 +1,5 @@
 def allKindsOfNodeDepths(root):
-    return getTreeInfo(root).totalSumOfDepths
+    	return getTreeInfo(root).totalSumOfDepths
 	
 def getTreeInfo(tree):
 	if not tree:
@@ -26,7 +26,7 @@ class TreeInfo:
 
 # This is the class of the input binary tree.
 class BinaryTree:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    	def __init__(self, value):
+        	self.value = value
+        	self.left = None
+        	self.right = None
