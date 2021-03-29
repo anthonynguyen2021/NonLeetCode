@@ -1,13 +1,13 @@
 # This is the class of the input root. Do not edit it.
 class BinaryTree:
-    def __init__(self, value, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
+    	def __init__(self, value, left=None, right=None):
+        	self.value = value
+        	self.left = left
+        	self.right = right
 
 # Time = O(n) | Space = O(h) where h is the height of the tree
 def rightSiblingTree(root):
-    mutate(root, None, False)
+    	mutate(root, None, False)
 	return root
 
 def mutate(node, parent, isLeft):
