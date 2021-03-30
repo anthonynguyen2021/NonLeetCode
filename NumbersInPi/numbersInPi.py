@@ -8,6 +8,8 @@
 # in the recursive call, we have -1 since at idx = len(pi)-1, we have a letter that may be in numbers. But we know this has solution 0, so minSpace should be 0. According to our
 # formula for minSpace, setting the result to -1 solves this.
 
+# Remark: We assume getMinSpace(pi, setNNumbers, cache, i) solves the minimum size partition on the substring pi[i:].
+
 
 # Time = O(n^3 + lm) | Space = O(n+ lm) where n is the length of pi, m is the length of numbers and l is the expected value of the length of numbers.
 
