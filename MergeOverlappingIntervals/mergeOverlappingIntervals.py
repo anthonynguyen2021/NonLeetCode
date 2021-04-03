@@ -1,6 +1,9 @@
+# Explanation of solution: See question prompt for the explanation.
+
+# Complexity explanation: nlogn time due to sorting. For space, we store at most n items due to disjoint intervals.
 # Time = O(nlogn) | Space = O(n)
 def mergeOverlappingIntervals(intervals):
-    if not len(intervals):
+	if not len(intervals):
 		return []
 	sortedIntervals = sorted(intervals, key=lambda x : x[0])
 	mergedIntervals = [sortedIntervals[0][:]]
@@ -11,4 +14,4 @@ def mergeOverlappingIntervals(intervals):
 			mergedIntervals[-1] = [mergedIntervals[-1][0], max(end, mergedIntervals[-1][1])]
 		else:
 			mergedIntervals.append(currentInterval)
-    return mergedIntervals
+	return mergedIntervals
