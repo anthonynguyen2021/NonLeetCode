@@ -1,0 +1,6 @@
+Given a list of intervals: intervals = [[a1, b1], [a2, b2], ..., [an, bn]], merge them.
+
+For instance, intervals [0, 2] and [2, 3] becomes [0, 3]. Interals [0, 1] and [2, 3] yield [[0, 1], [2, 3]]. 
+
+The idea is to sort a1, a2, .., an. From there, to merge [a1, b1], [a2, b2], we see if a2 <= b1. If so, set the merged interval to [a1, max(b1, b2)]. Do this for the
+remaining intervals that were sorted based on the first coordinate. 
