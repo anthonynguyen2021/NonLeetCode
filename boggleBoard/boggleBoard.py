@@ -1,6 +1,17 @@
-# Time = O(ws + mn*7^s) | Space = O(ws + mn)
+# Explanation of Solution: The idea is to use a trie data structure to store our words. We need an array (same size as board) to store
+# our path we visited in our dfs search. If we start at index (i, j) in our board, we start the traversal. If we have visited at (i, j) 
+# return for that traversral. At coordinates (i, j), if the char = board[i][j] is not in our trie, continue. Otherwise, go deeper
+# into our trie and search which is set by trieNode = trieNode[char]. Set (i, j) to be visited. Grab all of (i, j) neighbors (8 of them)
+# and perform a dfs on these 8. After that, set (i, j) to be unvisited - see code. 
+
+# Explanation of Complexities: For the space, we need to create the trie structure which takes ws. To store our output, it takes
+# ws. The visited array takes ws where w is the number of words in words and s is the length of the largest word in words. 
+# Dumping the strings in words as keys is ws space. For
+# time complexity, we have we have ws to build the trie data structure. For each of the entry of mn size board 'board', we have
+# 8 neighbors to check (everything else constant check). Then each of those have 8 neighbors. So we do this 's' times. So 8^s.
+# Time = O(ws + mn*8^s) | Space = O(ws + mn)
 def boggleBoard(board, words):
-    trie = Trie()
+    	trie = Trie()
 	for word in words:
 		trie.add(word)
 	visited = [[False for _ in row] for row in board]
