@@ -1,6 +1,6 @@
 # Time = O(nlogn) | Space = O(n)
 def countInversions(array):
-    return countInversionsRecursion(array, 0, len(array))
+    	return countInversionsRecursion(array, 0, len(array))
 	
 def countInversionsRecursion(array, start, end):
 	if end - start < 2:
