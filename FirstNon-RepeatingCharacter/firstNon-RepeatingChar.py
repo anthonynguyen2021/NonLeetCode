@@ -8,7 +8,7 @@
 # fact that the alphabet has 26 characters
 # Time = O(n) | Space = O(1)
 def firstNonRepeatingCharacter(string):
-    alphabetHashMap = {}
+    	alphabetHashMap = {}
 	found = -1
 	for idx, char in enumerate(string):
 		if char not in alphabetHashMap:
@@ -19,4 +19,4 @@ def firstNonRepeatingCharacter(string):
 		if alphabetHashMap[key][0] == 1:
 			found = alphabetHashMap[key][1]
 			break
-    return found
+    	return found
