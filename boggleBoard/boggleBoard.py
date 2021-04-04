@@ -2,7 +2,9 @@
 # our path we visited in our dfs search. If we start at index (i, j) in our board, we start the traversal. If we have visited at (i, j) 
 # return for that traversral. At coordinates (i, j), if the char = board[i][j] is not in our trie, continue. Otherwise, go deeper
 # into our trie and search which is set by trieNode = trieNode[char]. Set (i, j) to be visited. Grab all of (i, j) neighbors (8 of them)
-# and perform a dfs on these 8. After that, set (i, j) to be unvisited - see code. 
+# and perform a dfs on these 8. After that, set (i, j) to be unvisited - see code. Noe that wordsInBoard is there in case of
+# duplicate strings found. Note that it takes time to put the strings in as keys, but we can store them as references to indices
+# of words, so we can do this in O(1). Also, we can't use a letter twice, so once we visited a character, we can't reuse it.
 
 # Explanation of Complexities: For the space, we need to create the trie structure which takes ws. To store our output, it takes
 # ws. The visited array takes ws where w is the number of words in words and s is the length of the largest word in words. 
