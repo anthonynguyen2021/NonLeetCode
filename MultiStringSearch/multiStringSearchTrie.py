@@ -1,7 +1,7 @@
 # Time = O(sw + sb) | Space = O(sw)
 def multiStringSearch(bigString, smallStrings):
 	trie = Trie()
-    for idx in range(len(smallStrings)):
+    	for idx in range(len(smallStrings)):
 		word = smallStrings[idx]
 		trie.add(word, idx)
 	smallContainedInBig = [False for word in smallStrings]
