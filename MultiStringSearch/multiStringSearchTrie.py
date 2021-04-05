@@ -1,3 +1,6 @@
+# Explanation of Solution:
+
+# Explanation of complexities: 
 # Time = O(sw + sb) | Space = O(sw)
 def multiStringSearch(bigString, smallStrings):
 	trie = Trie()
