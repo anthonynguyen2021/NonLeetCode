@@ -1,3 +1,8 @@
+# Brute force idea:
+
+# Explanation of solution:
+
+# Explanation of complexities:
 # Time = O(w * h) | Space = O(w * h) where w is the width and h is the height
 def maximumSumSubmatrix(matrix, size):
     	sumsMatrix = getTotalSumMatrix(matrix)
