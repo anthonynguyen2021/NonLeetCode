@@ -1,4 +1,10 @@
-# Time = O(n^2) | Space = O(n)
+# Explanation of solution: Assume that we sort the starting time. The algorithm loops over the list of ordered pairs, so for i in {0, ... , len(time)-1}, we check
+# the largest number of laptop rented out of time[0], ..., time[i]. To see this, loop through j in {0, ..., i-1} and check if time[j][1] > time[i][0] (increment count by 1).
+# This check will tell us that we need to rent out another laptop. 
+
+# Explanation of complexities: The time follows from the nested loop. Remark: The sorting is O(nlogn) so this doesn't affect the overall time. The space follows 
+# from no auxilliary space.
+# Time = O(n^2) | Space = O(1)
 def laptopRentals(times):
 	if len(times) == 0:
 		return 0
