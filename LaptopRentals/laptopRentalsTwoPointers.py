@@ -1,6 +1,6 @@
 # Time = O(nlogn) | Space = O(n)
 def laptopRentals(times):
-    start = [time[0] for time in times]
+    	start = [time[0] for time in times]
 	end = [time[1] for time in times]
 	
 	start.sort()
@@ -17,4 +17,4 @@ def laptopRentals(times):
 		else:
 			numberOfLaptops += 1
 			startIdx += 1
-    return numberOfLaptops
+    	return numberOfLaptops
