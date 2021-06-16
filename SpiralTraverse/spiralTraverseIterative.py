@@ -29,3 +29,34 @@ def spiralTraverse(array):
 		firstCol += 1
 		lastCol -= 1
 	return spiral
+
+# Here's a second approach and is easier than the above - simplification comes from the body of the while loop. The base case / edge case to worry about is when
+# topRow == bottomRow & leftCol == rightCol - draw these basic examples.
+
+def spiralTraverse(array):
+	topRow = 0
+	bottomRow = len(array)-1
+	leftCol = 0
+	rightCol = len(array[0])-1
+	spiralTraverse = []
+	while leftCol <= rightCol and topRow <= bottomRow:
+		# deal with edge cases
+		for idx in range(leftCol, rightCol+1):
+			spiralTraverse.append(array[topRow][idx])
+		for idx in range(topRow+1, bottomRow):
+			spiralTraverse.append(array[idx][rightCol])
+		for idx in reversed(range(leftCol, rightCol+1)):
+			if topRow == bottomRow:
+				break
+			spiralTraverse.append(array[bottomRow][idx])
+		for idx in reversed(range(topRow+1, bottomRow)):
+			if leftCol == rightCol:
+				break
+			spiralTraverse.append(array[idx][leftCol])
+		
+		leftCol += 1
+		rightCol -= 1
+		topRow += 1
+		bottomRow -= 1
+	
+	return spiralTraverse
