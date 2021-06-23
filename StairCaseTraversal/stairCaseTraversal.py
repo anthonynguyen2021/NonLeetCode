@@ -1,5 +1,5 @@
 def staircaseTraversal(height, maxSteps):
-    heightSolution = [0 for _ in range(0, height + 1)]
+	heightSolution = [0 for _ in range(0, height + 1)]
 	heightSolution[0] = 1
 	heightSolution[1] = 1
 	
