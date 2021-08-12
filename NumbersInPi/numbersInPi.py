@@ -2,7 +2,7 @@
 
 # Explanation: The idea of the recursive function does the following: Looking at substring of pi from index i to the end, we compute the smallest partition size so each part
 # is in numbers. Note that at index 0, you look at substring pi[0:0+1], pi[0:1+1], ...., pi[0:len(pi)]. At index 1, you look at pi[1:1+1], pi[1:2+1], ..., pi[1:len(pi)], and so on.
-# For each index, we have n^2, (n-1)^2, ... , 1^2 such substrings of pi. This sums to O(n^3). Note that at index 0, you'll call the function once in the main function. At index 1,
+# Observe this implies O(n^2) function calls and on average, we slice on average O(n) strings. Therefore, we have O(n^3). Note that at index 0, you'll call the function once in the main function. At index 1,
 # you'll call the function at most once; at index 2, at most 2 times; and so on. This implies that the function calls is at most O(n^2). But due to caching, it'll reduce unnecessary
 # computation. Note the lm comes from the setNumbers set since each key on average is l length and we have m of them. The space comes from the cache and setNumbers. For the base case
 # in the recursive call, we have -1 since at idx = len(pi)-1, we have a letter that may be in numbers. But we know this has solution 0, so minSpace should be 0. According to our
