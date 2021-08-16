@@ -26,3 +26,9 @@ def buildValidMatchedTags(left, right, currentString, result):
 		
 	if right == 0:
 		result.append(currentString)
+		
+# Explanation #2
+# Algorithm keeps track of the number of left and right parenthesis. When right hits 0, we append
+# assuming that the number of left <= number of right at all times for valid string.
+# Idea: First if means using a left parenthesis. Second if means use a right parenthesis
+# when is a valid string. Last if means that we used all left and all right parenthesis and valid.
