@@ -1,11 +1,11 @@
-# Idea: The complexity is v^2 * e for time due to looking through the vertices for smallest distance 
-# graph traversal is O(v+e). Initialize an array of minimum distance where all is infinity. Set the 
+# Idea: The complexity is v^2 + e for time due to looking through the vertices for smallest distance 
+# graph traversal and we look through all of a vertex's edges which has at most v vertices. We create the edges array, so we get O(v^2 + e) for time. Initialize an array of minimum distance where all is infinity. Set the 
 # start index to be 0 distance. we need a visited set. As long as the visited doesn't contain all
 # the vertices, get the smallest distance (if smallest is infinity - return), look at all unvisited
 # neighbors and if the distance from smallest vertex to its neighbor is smaller than previously recorded
 # update it. At the end, map all infinities to -1.
 
-# Time = O(v^2 * e + e) | Space = O(v)
+# Time = O(v^2 + e) | Space = O(v)
 def dijkstrasAlgorithm(start, edges):
     	visited = set()
 	minimumDistances = [float('inf') for edge in edges]
