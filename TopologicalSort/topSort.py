@@ -1,7 +1,7 @@
 # T = S = O(v + e)
 # build graph and return top ordering
 def topologicalSort(jobs, deps):
-    graph = CreateGraph(jobs, deps)
+    	graph = CreateGraph(jobs, deps)
 	return getTopOrder(graph)
 
 # Build graph and add prerequisites
