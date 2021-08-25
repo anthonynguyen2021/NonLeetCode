@@ -1,0 +1,19 @@
+Implement a variant of Dijkstra's Algorithm:
+
+Input:
+
+start = 0
+
+edges = [ [[1, 7]],
+          [[2, 6], [3, 20], [4, 3]],
+          [[3, 14]],
+          [[4, 2]],\
+          [],
+          [], ]
+          
+Length(edges) = # of nodes. For each node vertex, edges[vertex] is List[List] where the neighbors of vetex are vertices with their
+corresponding distance. For instance, vertex 0 has vertex 1 as a neighbor with distance 7. 
+
+Assume no self-loops. 
+
+The output[i] = smallest distance from start to vertex i. If no such path, return -1 where 0 <= i < len(edges).
