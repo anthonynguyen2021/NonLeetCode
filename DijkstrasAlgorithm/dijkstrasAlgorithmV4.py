@@ -11,7 +11,7 @@
 import heapq
 
 def dijkstrasAlgorithm(start, edges):
-    result = [float('inf')] * len(edges)
+    	result = [float('inf')] * len(edges)
 	result[start] = 0
 	visited = set([])
 	minHeap = [(0, start)]
