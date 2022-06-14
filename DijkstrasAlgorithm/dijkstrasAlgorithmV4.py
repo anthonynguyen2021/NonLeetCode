@@ -18,7 +18,7 @@ def dijkstrasAlgorithm(start, edges):
 	while len(minHeap) > 0:
 		currentDistance, node = heapq.heappop(minHeap) # currentDistance is the shortest distance from start to node (assuming node hasn't been visited)
 
-		if node in visited:
+		if node in visited: # it's possible that node appeared in minHeap at least twice
 			continue
 		
 		for neighborNode, distance in edges[node]:
