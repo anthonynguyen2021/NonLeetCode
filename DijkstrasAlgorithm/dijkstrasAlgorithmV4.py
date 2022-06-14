@@ -11,17 +11,20 @@
 import heapq
 
 def dijkstrasAlgorithm(start, edges):
-    	result = [float('inf')] * len(edges)
+	result = [float('inf')] * len(edges)
 	result[start] = 0
 	visited = set([])
 	minHeap = [(0, start)]
 	while len(minHeap) > 0:
 		currentDistance, node = heapq.heappop(minHeap) # currentDistance is the shortest distance from start to node
+
+		if node in visited:
+			continue
 		
 		for neighborNode, distance in edges[node]:
-            if neighborNode in visited:
-                continue
+			if neighborNode in visited:
+				continue
 			result[neighborNode] = min(result[neighborNode], currentDistance + distance)
-            heapq.heappush(minHeap, (result[neighborNode], neighborNode))
-        visited.add(node)
+        		heapq.heappush(minHeap, (result[neighborNode], neighborNode))
+        	visited.add(node)
 	return list(map(lambda x : -1 if x == float('inf') else x, result))
