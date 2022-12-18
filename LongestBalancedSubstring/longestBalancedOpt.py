@@ -14,36 +14,50 @@
 # Explanation: You look through the string which is O(n) time and the stack yields O(n) space.
 # Time = O(n) | Space = O(n)
 def longestBalancedSubstring(string):
+
 	maxLength = 0
-    	stackIdx = [-1]
+	stackIdx = [-1]
+
 	for i in range(len(string)):
+
 		if string[i] == "(":
 			stackIdx.append(i)
 		else:
+
 			stackIdx.pop()
+
 			if len(stackIdx) == 0:
 				stackIdx.append(i)
 			else:
 				beginningIdx = stackIdx[-1]
 				lengthValidBracket = i - beginningIdx
 				maxLength = max(maxLength, lengthValidBracket)
+
 	return maxLength
 
-# Here's another solution where I've mixed it up using enumerate(string).
 
-# Time = O(n) | Space = O(n)
+# Here's another solution where I've mixed it up using enumerate(string).
 def longestBalancedSubstring(string):
+	'''
+	Time: O(n) where n = len(string)
+	Space: O(n)
+	'''
 	maxLength = 0
-    	stack = [-1]
+	stack = [-1]
+
 	for i, char in enumerate(string):
+
 		if char == "(":
 			stack.append(i)
 		else:
+
 			stack.pop()
+
 			if len(stack) == 0:
 				stack.append(i)
 			else:
 				beginningIdx = stack[-1]
 				lengthValidBracket = i - beginningIdx
 				maxLength = max(maxLength, lengthValidBracket)
+
 	return maxLength
