@@ -18,12 +18,14 @@ def sumOfLinkedLists(linkedListOne, linkedListTwo):
 	right = linkedListTwo
 	carry = 0
 
+	# Add values from corresponding nodes left and right
 	while left and right:
 		ones = (left.value + right.value + carry) % 10
 		carry = (left.value + right.value + carry) // 10
 		prev.next = LinkedList(ones)
 		prev, left, right = prev.next, left.next, right.next
 
+	# At most 1 linked list left
 	while left or right:
 		ones = (left.value + carry) % 10 if left else (right.value + carry) % 10
 		if left:
@@ -37,6 +39,7 @@ def sumOfLinkedLists(linkedListOne, linkedListTwo):
 		else:
 			right = right.next
 
+	# If there is a carry, add a node
 	if carry != 0:
 		prev.next = LinkedList(carry)
 		return preHead.next
