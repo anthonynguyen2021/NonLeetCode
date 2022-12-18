@@ -1,25 +1,35 @@
 WHITE, BLACK, GREY = 0, 1, 2
 
-# Time = O(v + e)
+# Time = O(v + e) where v = # of vertices and e = # of edges in the graph
 # Space = O(v)
 def cycleInGraph(edges):
-    	visit = [WHITE for node in edges]
+
+	visit = [WHITE for node in edges]
+
 	for idx in range(len(edges)):
+
 		if visit[idx] != WHITE:
 			continue
+
 		isCycle = depthFirstSearch(edges, visit, idx)
 		if isCycle:
 			return True
+
 	return False
 
 def depthFirstSearch(edges, visit, node):
+
 	visit[node] = BLACK
+
 	for neighbor in edges[node]:
+
 		if visit[neighbor] == BLACK:
 			return True
 		elif visit[neighbor] == WHITE:
 			isCycle = depthFirstSearch(edges, visit, neighbor)
 			if isCycle:
 				return True
+
 	visit[node] = GREY
+
 	return False

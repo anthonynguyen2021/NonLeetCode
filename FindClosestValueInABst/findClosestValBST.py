@@ -1,4 +1,4 @@
-# Time = O(log n)
+# Time = O(log n) where n = # of nodes in the tree
 # Space = O(1)
 
 # Idea of solution: Let a pointer be the current node in the tree. If the current's value = target, 
@@ -8,23 +8,33 @@
 # and set current = current.left
 
 def findClosestValueInBst(tree, target):
-   	smallestDistance = float('inf')
+
+	smallestDistance = float('inf')
 	current = tree
+
 	while current:
+
+		# Found the closest value
 		if current.value == target:
 			return current.value
+
 		if abs(current.value - target) < smallestDistance:
 			smallestDistance = abs(current.value - target)
 			smallestValue = current.value
+
 		if target > current.value:
 			current = current.right
 		else:
-			current = current.left 
+			current = current.left
+
 	return smallestValue
+
 
 # This is the class of the input tree. Do not edit.
 class BST:
-    	def __init__(self, value):
-        	self.value = value
-        	self.left = None
-        	self.right = None
+
+	def __init__(self, value):
+
+		self.value = value
+		self.left = None
+		self.right = None
