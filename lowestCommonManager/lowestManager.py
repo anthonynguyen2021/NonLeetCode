@@ -8,27 +8,38 @@
 # Cases we consider, we go through a current nodes children, if they don't return, they don't have 2 documents. If we saw at most 1 document, then the root node may contain the document
 # or not. Once we check this, we should set lowestManager to be the current root node if we've seen 2 documents. Otherwise, lowestManager is 0.
 
-# Time = O(n)
+# Time = O(n) where n = # of nodes in tree
 # Space = O(h) where h is the height of the tree
 def getLowestCommonManager(topManager, reportOne, reportTwo):
-    	return getLowestManager(topManager, reportOne, reportTwo).lowestManager
+    return getLowestManager(topManager, reportOne, reportTwo).lowestManager
+
 
 def getLowestManager(manager, reportOne, reportTwo):
+
 	numDocuments = 0
+
 	for document in manager.directReports:
+
 		documentManager = getLowestManager(document, reportOne, reportTwo)
+
 		if documentManager.lowestManager:
 			return documentManager
+
 		numDocuments += documentManager.numDocuments
+
 	if manager == reportOne or manager == reportTwo:
 		numDocuments += 1
+
 	lowestManager = manager if numDocuments == 2 else None
+
 	return Manager(lowestManager, numDocuments)
+
 
 class Manager:
 	def __init__(self, lowestManager, numDocuments):
 		self.lowestManager = lowestManager
 		self.numDocuments = numDocuments
+
 
 # This is an input class. Do not edit.
 class OrgChart:
