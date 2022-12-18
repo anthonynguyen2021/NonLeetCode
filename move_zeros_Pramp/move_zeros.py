@@ -1,5 +1,6 @@
-import unittest
 from __future__ import annotations
+import unittest
+
 
 class Solution:
 	# time = O(n) | space = O(1) where n = len(arr)
@@ -29,9 +30,13 @@ class Solution:
 obj = Solution()
 
 class Test(unittest.TestCase):
-	
+
 	def test_1(self):
-		self.assertEqual(obj.move_zeros([1, 10, 0, 2, 8, 3, 0, 0, 6, 4, 0, 5, 7, 0]), [1, 10, 2, 8, 3, 6, 4, 5, 7, 0, 0, 0, 0, 0])
-# 										                          i                
+
+		self.assertEqual(obj.move_zeros(
+			[1, 10, 0, 2, 8, 3, 0, 0, 6, 4, 0, 5, 7, 0]),
+			[1, 10, 2, 8, 3, 6, 4, 5, 7, 0, 0, 0, 0, 0]
+						)
+             
 if __name__ == '__main__':
 	unittest.main()
