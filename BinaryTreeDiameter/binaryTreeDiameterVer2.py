@@ -6,19 +6,22 @@
 
 # This is an input class. Do not edit.
 class BinaryTree:
-    def __init__(self, value, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
+	def __init__(self, value, left=None, right=None):
+		self.value = value
+		self.left = left
+		self.right = right
 
 
 def binaryTreeDiameter(tree):
-    	diameter, height = buildDiameter(tree)
+	diameter, height = buildDiameter(tree)
 	return diameter
 
 def buildDiameter(tree):
+
 	if not tree:
 		return -1, -1
+
 	leftDiameter, leftHeight = buildDiameter(tree.left)
 	rightDiameter, rightHeight = buildDiameter(tree.right)
+
 	return max(leftDiameter, rightDiameter, leftHeight + rightHeight + 2), max(leftHeight, rightHeight) + 1

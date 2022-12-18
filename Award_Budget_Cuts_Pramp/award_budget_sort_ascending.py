@@ -3,10 +3,10 @@
 def find_grants_cap(grantsArray, newBudget):
 
   grantsArray.sort()
-  
+
   grants_left = len(grantsArray)
   total_grants_left = newBudget
-  
+
   for grant in grantsArray:
     
     if grant * grants_left >= total_grants_left:
@@ -14,3 +14,5 @@ def find_grants_cap(grantsArray, newBudget):
     
     grants_left -= 1
     total_grants_left -= grant
+
+  return total_grants_left
