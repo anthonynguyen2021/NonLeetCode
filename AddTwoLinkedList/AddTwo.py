@@ -16,6 +16,7 @@ class Solution:
         return self.helperAddTwoNumbers(l1, l2, 0)
     
     def helperAddTwoNumbers(self, l1, l2, carry):
+
         if l1 and l2:
             head = ListNode((l1.val + l2.val + carry) % 10)
             carry = 1 if l1.val + l2.val + carry > 9 else 0
@@ -33,4 +34,5 @@ class Solution:
                 head = ListNode(carry)
             else:
                 head = None
+
         return head 
