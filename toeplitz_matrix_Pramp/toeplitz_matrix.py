@@ -1,5 +1,6 @@
 import unittest
 
+
 class Solution:
 	# time = O(m * n) | space = O(1) where m, n = len(matrix), len(matrix[0])
 	def is_toeplitz(self, matrix):
@@ -12,6 +13,7 @@ class Solution:
 			output: bool
 		'''
 		def diagonal_constant(r, c):
+
 			candidate = matrix[r][c]
 
 			while 0 <= r < len(matrix) and 0 <= c < len(matrix[0]):
@@ -36,6 +38,7 @@ class Solution:
 
 class_obj = Solution()
 
+
 class test(unittest.TestCase):
 	
 	def test_1(self):
@@ -43,6 +46,7 @@ class test(unittest.TestCase):
 
 	def test_2(self):
 		self.assertEqual(class_obj.is_toeplitz([[1, 2, 3, 4], [5, 1, 9, 3], [6, 5, 1, 2]]), False)
+
 
 if __name__ == '__main__':
 	unittest.main()

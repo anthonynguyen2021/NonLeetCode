@@ -5,16 +5,21 @@
 # so on.
 
 # Explanation of complexities: The time comes from the for loop and sorting. The space comes from index Tasks.
-# Time = O(NlogN) | Space = O(N)
+# Time: O(NlogN) where N = len(tasks)
+# Space: O(N)
 def taskAssignment(k, tasks):
-    	indexTasks = [i for i in range(len(tasks))]
-	indexTasks.sort(key = lambda x : tasks[x])
+
+	indexTasks = [i for i in range(len(tasks))]
+	indexTasks.sort(key=lambda x: tasks[x])
 	taskAssignmentOptimal = []
+
 	for idx in range(k):
 		taskAssignmentOptimal.append([indexTasks[idx]])
+
 	for idx in range(k):
-		taskAssignmentOptimal[-idx-1].append(indexTasks[k+idx])
-    return taskAssignmentOptimal
+		taskAssignmentOptimal[-idx-1].append(indexTasks[k+idx])  # FIXME: Revise code
+
+	return taskAssignmentOptimal
 
 # Idea of 2nd solution: For each task length in array, we create a hash map that maps the task length to its indices in array. We do that for all elements 
 # of array. Then we sort the array and call it sortedArray. Then we iterate through the sorted Array and look at its first and last element with respect

@@ -25,7 +25,7 @@ class Solution:
 				break
 
 			left = max(arr1[idx1][0], arr2[idx2][0])
-			right = min(arr1[idx1][1],arr2[idx2][1])
+			right = min(arr1[idx1][1], arr2[idx2][1])
 
 			if right - left >= dur:
 				return [left, left + dur]
@@ -36,6 +36,7 @@ class Solution:
 
 class_obj = Solution()
 
+
 class test(unittest.TestCase):
 
 	def test_1(self):
@@ -45,6 +46,7 @@ class test(unittest.TestCase):
 	def test_2(self):
 
 		self.assertEqual(class_obj.time_planner([[10, 50], [60, 120], [140, 210]], [[0, 15], [60, 70]], 12), [])
+
 
 if __name__ == '__main__':
 	unittest.main()
