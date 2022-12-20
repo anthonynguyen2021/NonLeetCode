@@ -20,6 +20,7 @@ class Solution:
 
 class_obj = Solution()
 
+
 class test(unittest.TestCase):
 	
 	def test_1(self):
