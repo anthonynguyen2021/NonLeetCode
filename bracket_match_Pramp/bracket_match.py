@@ -24,10 +24,13 @@ class test(unittest.TestCase):
 	
 	def test_1(self):
 		self.assertEqual(class_obj.bracket_match('(()'), 1)
+
 	def test_2(self):
 		self.assertEqual(class_obj.bracket_match('(())'), 0)
+
 	def test_3(self):
 		self.assertEqual(class_obj.bracket_match('())('), 2)
+
 
 if __name__ == '__main__':
 	unittest.main()
