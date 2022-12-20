@@ -1,4 +1,5 @@
 
+
 # This is the class of the input root. Do not edit it.
 class BinaryTree:
 	def __init__(self, value, left=None, right=None):
@@ -22,6 +23,7 @@ class BinaryTree:
 def rightSiblingTree(root):
 	mutate(root, None, False)
 	return root
+
 
 def mutate(node, parent, isLeft):
 

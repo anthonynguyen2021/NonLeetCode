@@ -1,3 +1,5 @@
+
+
 # time = O(nlogn) | space = O(n) where n = len(grantsArray)
 # solution: sort grantsArray. Draw a picture. 
 def find_grants_cap(grantsArray, newBudget):

@@ -11,6 +11,7 @@ in left subtree is the sub of depths for tree except the computation for the rig
 def allKindsOfNodeDepths(root):
 	return getTreeInfo(root).totalSumOfDepths
 	
+
 def getTreeInfo(tree):
 	if not tree:
 		return TreeInfo(0, 0, 0)

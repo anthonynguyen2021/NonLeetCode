@@ -1,5 +1,6 @@
 WHITE, BLACK, GREY = 0, 1, 2
 
+
 # Time = O(v + e) where v = # of vertices and e = # of edges in the graph
 # Space = O(v)
 def cycleInGraph(edges):
@@ -16,6 +17,7 @@ def cycleInGraph(edges):
 			return True
 
 	return False
+
 
 def depthFirstSearch(edges, visit, node):
 

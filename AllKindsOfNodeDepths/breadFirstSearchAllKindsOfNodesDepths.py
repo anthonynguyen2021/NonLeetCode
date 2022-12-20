@@ -28,12 +28,13 @@ def allKindsOfNodeDepths(root):
 
 	return totalSumOfNodesDepths
 
+
 def sumOfDepthsTree(tree, depth=0):
 
 	if not tree:
 		return 0
 
-	return sumOfDepthsTree(tree.left, depth+1) + sumOfDepthsTree(tree.right, depth+1) + depth
+	return sumOfDepthsTree(tree.left, depth + 1) + sumOfDepthsTree(tree.right, depth + 1) + depth
 
 
 # This is the class of the input binary tree.

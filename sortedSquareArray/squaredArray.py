@@ -2,6 +2,7 @@
 # entries array, imagine that we flip it and absolute value the entries. Now, it's clear that we can figure out what the ith entry of the output array, since we have
 # a two pointer approach for the negative array and positive array. For the smaller one in absolute value, we insert the square of that in the next entry of the output array.
 
+
 # Time = O(n) where n = len(array)
 # Space = O(n)
 def sortedSquaredArray(array):

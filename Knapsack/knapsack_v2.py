@@ -7,7 +7,7 @@ def knapsackProblem(items, capacity):
 
 	Solve using bottom-up DP where dynamicProgramming[row][col + 1] solves the problem using items[:row+1] and up to capacity col + 1.
 	'''
-	dynamicProgramming = [[0 for _ in range(0, capacity+1)] for row in items]
+	dynamicProgramming = [[0 for _ in range(0, capacity + 1)] for row in items]
 
 	# first row
 	for i in range(len(dynamicProgramming[0])):

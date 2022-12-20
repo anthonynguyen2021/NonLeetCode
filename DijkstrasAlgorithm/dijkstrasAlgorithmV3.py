@@ -15,6 +15,7 @@ of visited and push onto the heap. Return result.
 
 """
 
+
 def dijkstrasAlgorithm(start, edges):
 
 	# intialize data structure for shortest distance

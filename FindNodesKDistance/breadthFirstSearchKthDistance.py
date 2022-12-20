@@ -1,5 +1,6 @@
 from collections import deque  # use queue
 
+
 # This is an input class. Do not edit.
 class BinaryTree:
 	def __init__(self, value, left=None, right=None):
@@ -22,6 +23,7 @@ def findNodesDistanceK(tree, target, k):
 	targetNode = getNodeFromValue(tree, target, parentsNode)
 
 	return breadthFirstSearch(targetNode, k, parentsNode)
+
 
 def breadthFirstSearch(node, k, parentsNode):
 	# Use a queue data structure to perform a bfs starting at the node target
@@ -55,6 +57,7 @@ def breadthFirstSearch(node, k, parentsNode):
 
 	return []
 
+
 def depthFirstSearchParent(node, parentsNode, parent=None):
 
 	if not node:
@@ -63,7 +66,8 @@ def depthFirstSearchParent(node, parentsNode, parent=None):
 	parentsNode[node.value] = parent
 	depthFirstSearchParent(node.left, parentsNode, node)
 	depthFirstSearchParent(node.right, parentsNode, node)
-	
+
+
 def getNodeFromValue(node, target, parentsNode):
 
 	if not parentsNode[target]:

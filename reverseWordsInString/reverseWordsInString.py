@@ -2,6 +2,7 @@
 # i is the ith iteration of the for loop and startIdx is the beginning of the word in the string. However, if string[i] is not " " and string[startIdx] = " ", add " " to the list.
 # Note this happens when we have a string that looks like this '..." "x'.
 
+
 # Time: O(n) where n is the length of the string
 # Space: O(n) 
 def reverseWordsInString(string):

@@ -1,5 +1,6 @@
 import unittest
 
+
 class Solution:
 
 	def bracket_match(self, text):

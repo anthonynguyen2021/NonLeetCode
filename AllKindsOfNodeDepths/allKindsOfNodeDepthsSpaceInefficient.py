@@ -19,6 +19,7 @@ def allKindsOfNodeDepths(root):
 
 	return sumOfAllDepthsAtNodes(depthTable)
 
+
 def sumOfAllDepthsAtNodes(depthTable):
 
 	resultsSumAllDepths = 0
@@ -26,6 +27,7 @@ def sumOfAllDepthsAtNodes(depthTable):
 		resultsSumAllDepths += depthTable[key]
 
 	return resultsSumAllDepths
+
 
 def buildNumberOfNodes(tree, countTable):
 
@@ -43,6 +45,7 @@ def buildNumberOfNodes(tree, countTable):
 		countTable[tree] += countTable[tree.right]
 
 	return countTable[tree]
+
 
 def buildSumOfDepths(tree, depthTable, countTable):
 

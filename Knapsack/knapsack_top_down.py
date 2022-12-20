@@ -10,7 +10,7 @@ def knapsackProblem(items, capacity):
 	'''
     
 	memo = {}
-	
+
 	def	dfs(index, m):
 		'''
 		0 <= index < len(items)
@@ -38,7 +38,6 @@ def knapsackProblem(items, capacity):
 		for idx_j in reversed(range(0, capacity + 1)):
 			dfs(idx, idx_j)
 
-
 	def getSolution(items, memo):
 
 		getItemsIdx = []
@@ -51,7 +50,7 @@ def knapsackProblem(items, capacity):
 
 			# Can't use item in row since it has no value.
 			if memo[(row, col)] == 0:
-				row -= 1	
+				row -= 1
 			elif row >= 0:
 				getItemsIdx.append(row)
 				col -= items[row][1]

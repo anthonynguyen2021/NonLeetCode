@@ -1,3 +1,5 @@
+
+
 # This is an input class. Do not edit.
 class BinaryTree:
 	def __init__(self, value, left=None, right=None, parent=None):
@@ -8,6 +10,7 @@ class BinaryTree:
 
 # Idea of solution: Write a recursive method to find successor. If we know that we're going downward, we can write a recursive method starting with the node's right child.
 # Otherwise, start a recursive method in finding the parent and the correct next order.
+
 
 # Time = O(h) where h = height of the tree
 # Space = O(h)

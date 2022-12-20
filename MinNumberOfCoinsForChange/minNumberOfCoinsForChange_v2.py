@@ -2,7 +2,8 @@
 
 def minNumberOfCoinsForChange(n, denoms):
 	'''
-	Time: O(n * len(denoms)) | Space = O(n)
+	Time: O(n * len(denoms))
+	Space: O(n)
 
 	Solution:
 	

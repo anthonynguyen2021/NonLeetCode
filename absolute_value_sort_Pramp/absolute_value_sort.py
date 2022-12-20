@@ -1,5 +1,6 @@
 import unittest
 
+
 # time = O(nlogn) | space = O(n) where n = len(arr)
 # solution: sort array. then use two pointers from beginning and end of the sorted array and compare. Then we insert from the rear.
 class Solution:
@@ -36,6 +37,7 @@ class Solution:
 
 
 class_obj = Solution()
+
 
 class test(unittest.TestCase):
 	

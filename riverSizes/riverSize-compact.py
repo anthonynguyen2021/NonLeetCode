@@ -1,6 +1,8 @@
 from collections import deque
 
-# T = O(V + E) | S = O(V) where V = # of vertices & E = # of edges where m, n = len(matrix), len(matrix[0]), V = mn, E = 4V
+
+# Time = O(V + E) where V = # of vertices & E = # of edges where m, n = len(matrix), len(matrix[0]), V = mn, E = 4V
+# Space: O(V)
 def riverSizes(matrix):
 
 	size = []

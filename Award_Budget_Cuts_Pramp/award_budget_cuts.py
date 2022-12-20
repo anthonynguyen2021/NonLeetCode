@@ -1,6 +1,11 @@
-# time = O(nlogn) | space = O(n) where n = len(grantsArray)
+
+
+# time: O(nlogn) where n = len(grantsArray)
+# space: O(n)
 """
-Solution: sort grantsArray in reverse order. Define surplus = sum(grantsARray) - newBudget.
+Solution: 
+
+sort grantsArray in reverse order. Define surplus = sum(grantsARray) - newBudget.
 If surplus is negative, that means we have a lot of budgets, so no cuts. So set cap = grantsArray[0].
 Let's assume that newBudget is not < 0. Imagine stacking these budgets as bar graphs.
 Then we subtrack the highest high and width. If surplus <= 0, break. The moment we break, the answer

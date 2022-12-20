@@ -1,6 +1,5 @@
-
-
 # Idea of solution: Start at each city and check if we can make the trip. For each starting point, we do O(n) work, so n*n = n^2.
+
 
 # Time = O(n^2) | Space = O(1) where n = len(distances)
 def validStartingCity(distances, fuel, mpg):

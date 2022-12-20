@@ -1,5 +1,4 @@
 
-
 # Idea of solution: To exploit a two pointer approach, we need to sort the array. We look over index i in 0, ...., n - 3 (which corresponds to potential triplet where the first is
 # array[i]). Set left pointer to i + 1, right to len(array) - 1. If array[i] + array[left] + array[right] == targetSum, add this triplet in and make sure you both increment left and decrement right by
 # +1 and -1 respectively (observe this). If array[i] + array[left] + array[right] < targetSum, this means that we need to increment left. Otherwise, decrement right with right -= 1.

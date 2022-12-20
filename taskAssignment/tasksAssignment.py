@@ -4,6 +4,7 @@
 # by indices where we pass the key = lambda x : array[x]. The first and last goes to the first person. The second and second to the last goes the 2nd. And
 # so on.
 
+
 # Explanation of complexities: The time comes from the for loop and sorting. The space comes from index Tasks.
 # Time: O(NlogN) where N = len(tasks)
 # Space: O(N)

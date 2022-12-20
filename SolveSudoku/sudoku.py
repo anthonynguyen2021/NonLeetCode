@@ -5,6 +5,7 @@
 # If we place a 1 there, we call the recursive function at index row, col+1. If we can't solve it, return False. Otherwise, return True. However if we can't solve it at
 # (row, col) with 1 there, we check 2 and call the recursive function at index row, col+1 again. 
 
+
 # Time = O(1) | Space = O(1) - the board is always a 9x9 so the amount of computation is always the same. The only additional storage is through the call stack, which is always
 # constant. 
 def solveSudoku(board):

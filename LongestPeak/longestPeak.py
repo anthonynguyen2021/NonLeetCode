@@ -24,6 +24,7 @@ def longestPeak(array):
 
 	return largestPeak
 
+
 def computePeak(array, index):
 
 	if index == 0 or index == len(array) - 1:

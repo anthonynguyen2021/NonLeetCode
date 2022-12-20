@@ -41,6 +41,7 @@ def siftDown(array, idx, endIdx):
 		else:
 			break
 
+
 # Time = O(n)
 def heapify(array):
 	'''Get the index of the parent in the second to last row'''

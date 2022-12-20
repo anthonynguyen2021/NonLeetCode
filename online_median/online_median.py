@@ -1,5 +1,6 @@
 import heapq
 
+
 def online_median(array):
     '''
     Time = O(nlogn) where n = len(array)

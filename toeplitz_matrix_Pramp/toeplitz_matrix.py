@@ -2,6 +2,7 @@ import unittest
 
 
 class Solution:
+
 	# time = O(m * n) | space = O(1) where m, n = len(matrix), len(matrix[0])
 	def is_toeplitz(self, matrix):
 		'''

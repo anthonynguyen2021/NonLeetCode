@@ -14,6 +14,7 @@ def numberOfWaysToTraverseGraph(width, height):
 	'''
 	return binomial(width + height - 2, width - 1)
 
+
 def binomial(n, m):
 
 	if n - m < m:

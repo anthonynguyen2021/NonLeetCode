@@ -1,5 +1,6 @@
 # This is an input class. Do not edit.
 
+
 class LinkedList:
     def __init__(self, value):
         self.value = value
@@ -20,6 +21,7 @@ def sumOfLinkedLists(linkedListOne, linkedListTwo):
 
 	# Add values from corresponding nodes left and right
 	while left and right:
+
 		ones = (left.value + right.value + carry) % 10
 		carry = (left.value + right.value + carry) // 10
 		prev.next = LinkedList(ones)
@@ -27,13 +29,17 @@ def sumOfLinkedLists(linkedListOne, linkedListTwo):
 
 	# At most 1 linked list left
 	while left or right:
+
 		ones = (left.value + carry) % 10 if left else (right.value + carry) % 10
+
 		if left:
 			carry = (left.value + carry) // 10
 		else:
 			carry = (right.value + carry) // 10
+
 		prev.next = LinkedList(ones)
 		prev = prev.next
+
 		if left:
 			left = left.next
 		else:

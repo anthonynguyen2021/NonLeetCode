@@ -1,7 +1,6 @@
+# Time: O(n) where n is the number of elements in the matrix
+# Space: O(n)
 
-
-# Time = O(n) where n is the number of elements in the matrix
-# Space = O(n)
 
 # Idea of solution: We use a flag to mark if we're going up or down. Initialize row, col = 0, 0
 # Starting with going in the down direction. As long as we're not in the left / bottom wall, add the item,

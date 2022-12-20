@@ -1,3 +1,5 @@
+
+
 # This is an input class. Do not edit.
 class BinaryTree:
 	def __init__(self, value, left=None, right=None):
@@ -5,17 +7,21 @@ class BinaryTree:
 		self.left = left
 		self.right = right
 
+
+
 # Store diameter / height in an object for each node
 class TreeInfo:
 	def __init__(self, diameter, height):
 		self.diameter = diameter
 		self.height = height
 
+
 # Time = O(n)
 # Space = O(n)
 # We use DFS in-order traversal
 def binaryTreeDiameter(tree):
 	return helperDiameter(tree).diameter
+
 
 def helperDiameter(tree):
 	# Base Case

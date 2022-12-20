@@ -7,6 +7,7 @@
 def shiftedBinarySearch(array, target):
 	return helperShiftedBinarySearch(array, target, 0, len(array) - 1)
 
+
 def helperShiftedBinarySearch(array, target, left, right):
 
 	if left > right:

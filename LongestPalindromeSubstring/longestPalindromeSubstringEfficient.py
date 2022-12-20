@@ -16,6 +16,7 @@ def longestPalindromicSubstring(string):
 
 	return string[longestDict['index'][0]:longestDict['index'][1]+1]
 
+
 def testPalindrome(string, i, longestDict):
 
 	if i > 0 and string[i] == string[i-1]:

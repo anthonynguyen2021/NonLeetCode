@@ -3,6 +3,7 @@
 # We just modify it. The idea is to run two instances of the modified binary search where if the midpoint points to the target, then we move the right pointer to the left of the 
 # midpoint and keep going if we're looking for the left index. For the other case, we move the left index to the right of the middle index. 
 
+
 # Time: O(log n) where n = len(array)
 # Space: O(1)
 def searchForRange(array, target):

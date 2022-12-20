@@ -1,6 +1,8 @@
 
 
-# T = S = O(v + e) where v = # of vertices AND e = # of edges
+# Time: O(v + e) where v = # of vertices AND e = # of edges
+# Space: O(v + e)
+
 # build graph and return top ordering
 def topologicalSort(jobs, deps):
 	graph = CreateGraph(jobs, deps)

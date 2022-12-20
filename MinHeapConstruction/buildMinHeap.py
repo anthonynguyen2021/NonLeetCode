@@ -1,3 +1,5 @@
+
+
 # Do not edit the class below except for the buildHeap,
 # siftDown, siftUp, peek, remove, and insert methods.
 # Feel free to add new properties and methods to the class.
@@ -12,8 +14,6 @@ class MinHeap:
 	bottom to top. Building this takes O(n) where n is the number of nodes. To get this,
 	count the number of sifting done in each depth and for each node in each depth.
 	'''
-
-
 	def buildHeap(self, array):
 		'''
 		Time: O(n) where n = len(array)
@@ -51,7 +51,6 @@ class MinHeap:
 			else:
 				break
 
-
 	def siftUp(self, array, index):
 		'''
 		Time: O(log n) where n = len(array)
@@ -69,7 +68,6 @@ class MinHeap:
 			else:
 				break
 
-
 	def peek(self):
 		'''
 		If the min heap is not empty, we can peak at it.
@@ -79,7 +77,6 @@ class MinHeap:
 		'''
 		if self.heap:
 			return self.heap[0]
-
 
 	def remove(self):
 		'''
@@ -92,7 +89,6 @@ class MinHeap:
 		self.siftDown(self.heap, 0, len(self.heap))
 
 		return pop
-
 
 	def insert(self, value):
 		'''

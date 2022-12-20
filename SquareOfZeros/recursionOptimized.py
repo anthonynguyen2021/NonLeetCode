@@ -6,6 +6,7 @@
 # 'r1-r2-c1-c2', we look if infoMatrix[r1][c1]["numZerosBelow"] & infoMatrix[r1][c1]["numZerosRight"] are at least as great as the length of the square. We do the same
 # for infoMatrix[r1][c2]["numZerosBelow"] & infoMatrix[r2][c1]["numZerosRight"] are at least as great as the length of the square.
 
+
 # Explanation: It's the same as the recursive method (non-Optimize) but checking the boundaries are now O(1) given we have access to number of zeros below and to the right
 # for each index (i, j). Note when we say number of zeros, we mean including the index (i, j) themselves and how many zeros to the right of (i, j) until we see a 1. Same
 # logic with bottom.
@@ -41,7 +42,7 @@ def hasSquareOfZeros(infoMatrix, r1, r2, c1, c2, cache):
 		hasSquareOfZeros(infoMatrix, r1, r2 - 1, c1, c2 - 1, cache) or
 		hasSquareOfZeros(infoMatrix, r1 + 1, r2 - 1, c1 + 1, c2 - 1, cache)
 	)
-	
+
 	return cache[key]
 
 

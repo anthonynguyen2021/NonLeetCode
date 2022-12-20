@@ -11,6 +11,7 @@
 # we look at substring string[j:i+j] denoted by [a1, ..., ai] just pictorial. We check if a1 == ai. If not, return False. Otherwise, we look if [a2, ..., ai - 1] is a palindrome,
 # which we computed previously by smallest length above. 
 
+
 # Time = O(n^3) | Space = O(n^2) 
 # Explanation: For time, we have two for loops which is O(n^2) and palindrome function which is O(n), so O(n^3) to build palindrome matrix.
 # For cuts, we have for each index, we have a forloop, so O(n^2). For space, we have O(n^2) from the matrix and O(n) from cuts.
@@ -19,9 +20,10 @@ def palindromePartitioningMinCuts(string):
 	palindrome = [[False for _ in string] for _ in string]
 
 	for i in range(len(string)):
-		for j in range(i, len(string)):
 
+		for j in range(i, len(string)):
 			palindrome[i][j] = isPalindrome(string, i, j)
+
 		cuts = [float('inf') for char in string]
 
 	cuts[0] = 0
@@ -31,7 +33,6 @@ def palindromePartitioningMinCuts(string):
 		if palindrome[0][idx]:
 			cuts[idx] = 0
 		else:
-
 			for i in range(1, idx + 1):
 				if palindrome[i][idx]:
 					cuts[idx] = min(cuts[idx], 1 + cuts[i-1])

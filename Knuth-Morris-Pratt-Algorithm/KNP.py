@@ -9,6 +9,7 @@
 
 # Note: We start with j = 0, i = 1 in the buildPatterns and NOT at i = j = 0 since we're looking for patterns at distinct indices.
 
+
 # Explanation - Space is O(m) to build patterns. For Time, to see why it's O(n+m), just think that we decrement j back the same number of times we move i forward and i moves forward only.
 # The proof idea is that over the course of the algorithm, the number of decrements of j can't exceed the increments of j, which is about the same number of increment of i (or less).
 # due to the case of j > 0. 
@@ -16,6 +17,7 @@
 def knuthMorrisPrattAlgorithm(string, substring):
 	pattern = buildPattern(substring)
 	return doesMatch(string, substring, pattern)
+
 
 def buildPattern(substring):
 

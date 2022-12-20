@@ -1,4 +1,5 @@
 
+
 # This is an input class. Do not edit.
 class BinaryTree:
 	def __init__(self, value, left=None, right=None, parent=None):
@@ -20,6 +21,7 @@ def findSuccessor(tree, node):
 	else:
 		return getNextParentInOrder(tree, node)
 
+
 def getLeftMostChild(tree, node):
 
 	current = node
@@ -27,6 +29,7 @@ def getLeftMostChild(tree, node):
 		current = current.left
 
 	return current
+
 
 def getNextParentInOrder(tree, node):
 

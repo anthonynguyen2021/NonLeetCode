@@ -1,5 +1,6 @@
 import unittest
 
+
 # time = O(m + n) | space = O(1) where m, n = len(arr1), len(arr2)
 # solution: use two pointers. Starting with one, if its ending time is less than the starting of the right
 # increment. Similarly, do the same with two. At this point, the intersection is non-empty. Then check their 
@@ -40,11 +41,9 @@ class_obj = Solution()
 class test(unittest.TestCase):
 
 	def test_1(self):
-
 		self.assertEqual(class_obj.time_planner([[10, 50], [60, 120], [140, 210]], [[0, 15], [60, 70]], 8), [60, 68])
 
 	def test_2(self):
-
 		self.assertEqual(class_obj.time_planner([[10, 50], [60, 120], [140, 210]], [[0, 15], [60, 70]], 12), [])
 
 

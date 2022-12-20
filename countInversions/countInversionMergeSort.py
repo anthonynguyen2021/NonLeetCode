@@ -17,10 +17,12 @@ the time comes from there are log n levels where at each level, we're doing O(n)
 
 """
 
+
 # Time = O(nlogn) | Space = O(n) where n = len(array)
 def countInversions(array):
     return countInversionsRecursion(array, 0, len(array))
-	
+
+
 def countInversionsRecursion(array, start, end):
 
 	if end - start < 2:
@@ -33,6 +35,7 @@ def countInversionsRecursion(array, start, end):
 	mergedCountInversion = mergeInversions(array, start, middle, end)
 
 	return leftCountInversion + rightCountInversion + mergedCountInversion
+
 
 def mergeInversions(array, left, middle, end):
 

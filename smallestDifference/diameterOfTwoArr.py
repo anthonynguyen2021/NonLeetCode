@@ -5,6 +5,7 @@
 # is going to increase the distance by the sortedness. In this case, we've decrease the size of arrayTwo by 1 and we're solving a smaller subproblem. mlogm and nlogn are the 
 # sorting complexity of sorting the two lists.
 
+
 # Time = O(nlogn + mlogm) where n, m are lengths of array1, array2 respectively.
 # Space = O(1)
 def smallestDifference(arrayOne, arrayTwo):

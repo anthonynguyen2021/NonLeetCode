@@ -7,6 +7,7 @@ def minHeightBst(array):
 	'''
 	return minHeightBstHelper(array, 0, len(array) - 1)
 
+
 def minHeightBstHelper(array, left, right):
 
 	if left > right:

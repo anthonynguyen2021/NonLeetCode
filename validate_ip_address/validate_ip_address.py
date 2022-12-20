@@ -1,5 +1,6 @@
 import unittest
 
+
 # time = O(1) = space
 # solution: simulation.
 class Solution:

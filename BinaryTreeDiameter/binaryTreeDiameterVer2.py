@@ -16,6 +16,7 @@ def binaryTreeDiameter(tree):
 	diameter, height = buildDiameter(tree)
 	return diameter
 
+
 def buildDiameter(tree):
 
 	if not tree:

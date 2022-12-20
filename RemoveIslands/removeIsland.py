@@ -1,6 +1,7 @@
 # Idea Solution: Perform DFS on the border of the image black pixels. Then iterate through the interior of the image and if we haven't visited the pixel and is black, change
 # it to white. 
 
+
 # Time = O(wh) # w is the width of the matrix and h is the height of the matrix
 # Space = O(wh) # The dfs and visited array are responsible for the space.
 def removeIslands(matrix):
@@ -53,7 +54,6 @@ def depthFirstSearch(matrix, visited, i, j):
 		neighbors = getNeighbors(visited, i, j)
 		for coordinate in neighbors:
 			stack.append(coordinate)
-
 
 
 def getNeighbors(visited, i, j):

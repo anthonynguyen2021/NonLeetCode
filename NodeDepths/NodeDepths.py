@@ -7,6 +7,7 @@ def nodeDepths(root):
 	'''
 	return dfs(root, 0, 0)
 
+
 def dfs(root, depth, current):
 
 	if not root:

@@ -11,11 +11,13 @@ class BinaryTree:
 # is height balanced. If not, return False. Suppose the right subtree is height Balanced as well. If not, return False. We can compute the height of the overall tree by
 # computing the largest height of the left & right subtree and add one. To check for balanced, return abs(heightLeft-heightRight) < 2
 	
+
 # Time = O(n) where n is the number of nodes
 # Space = O(h) where h is the height of the binary tree where we use function call stacks
 def heightBalancedBinaryTree(tree):
 	balanced, height = buildHeightBalanced(tree)
 	return balanced
+
 
 def buildHeightBalanced(tree):
 

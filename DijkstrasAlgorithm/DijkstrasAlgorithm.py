@@ -10,6 +10,7 @@ update it. At the end, map all infinities to -1.
 
 '''
 
+
 # Time = O(v^2 + e) | Space = O(v) where v = # of vertices, e = # of edges
 def dijkstrasAlgorithm(start, edges):
 
@@ -38,6 +39,7 @@ def dijkstrasAlgorithm(start, edges):
 		visited.add(vertex)
 
 	return list(map(lambda x : -1 if x == float('inf') else x, minimumDistances))
+
 
 def getSmallestDistance(minimumDistances, visited):
 

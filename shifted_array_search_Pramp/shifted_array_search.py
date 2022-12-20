@@ -1,5 +1,6 @@
 import unittest
 
+
 # time = O(logn) | space = O(1) where n = len(arr)
 # solution: Use binary search. If the middle does have it return index. Otherwise, left is sorted. If num is in left, shift the right pointer. Otherwise, move the left pointer.
 # If left is not sorted, check if num is in the right array (which is sorted). If so, move left pointer accordingly. Otherwise, move right pointer to appropriately.

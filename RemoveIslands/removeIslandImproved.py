@@ -53,7 +53,6 @@ def depthFirstSearch(matrix, i, j):
 			stack.append([i, j])
 
 
-
 def getNeighbors(matrix, i, j):
 
 	neighbors = []

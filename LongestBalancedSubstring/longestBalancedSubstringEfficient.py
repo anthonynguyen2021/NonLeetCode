@@ -6,6 +6,7 @@
 # So reset the counters of opening & closing to 0. The example why we check both left to right and right to left is the following:
 # ((). Note when we go from left to right, we don't update largest balanced bracket.
 
+
 # Explaination: This follows from two for loops; first goes from left to right and the second goes from right to left. 
 # Time = O(n) | Space = O(1)
 def longestBalancedSubstring(string):

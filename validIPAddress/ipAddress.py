@@ -2,6 +2,7 @@
 # first part of the ip address. The min is there so t hat i doesn't go to invalid string indices like len(string). After we pick i, the next period goes at position 
 # j = i+1 to i+4 (or len(string) which ever is smaller)
 
+
 # Time = O(1) | Space = O(1) 
 def validIPAddresses(string):
 	# Output of our answer

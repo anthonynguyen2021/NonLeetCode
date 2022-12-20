@@ -4,6 +4,7 @@ import unittest
 
 
 class Solution:
+
 	# time = O(m * (V + E)) | space = O(m * V) where V = # of nodes in graph, E = # of edges (words differ by 1 letter), and m = length of the longest word
 	# solution: use bfs. Check if target is in vocabulary first. If not, return -1. Otherwise, adjoin it to vocabulary. See code to see neighbors.
 	def shortest_word_edit_path(self, source, target, words):

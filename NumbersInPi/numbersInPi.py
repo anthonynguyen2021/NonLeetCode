@@ -20,6 +20,7 @@ def numbersInPi(pi, numbers):
 
 	return -1 if minSpace == float('inf') else minSpace
 
+
 def getMinSpace(pi, setNumbers, cache, idx):
 
 	if idx == len(pi):
@@ -27,7 +28,6 @@ def getMinSpace(pi, setNumbers, cache, idx):
 	elif idx in cache:
 		return cache[idx]
 	else:
-
 		minSpace = float('inf')
 
 		for i in range(idx, len(pi)):

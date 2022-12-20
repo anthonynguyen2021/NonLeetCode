@@ -1,5 +1,6 @@
 # Explanation of solution: Uses backtracking to detect cycle.
 
+
 # Time = O(v + e) where v = # of vertices, e = # of edges in graph
 # Space = O(v)
 def cycleInGraph(edges):
@@ -16,7 +17,9 @@ def cycleInGraph(edges):
 
 		if isCycle:  # if we see a cycle
 			return True
+
 	return False  # we do not see a cycle
+
 
 def depthFirstSearch(edges, visited, currentStack, node):
 	'''backtracking to detect cycle. Returns boolean to see if there's a cycle or not'''

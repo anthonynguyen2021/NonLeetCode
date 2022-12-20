@@ -76,7 +76,6 @@ def explore(i, j, board, trieNode, visited, wordsInBoard):
 		explore(neighbor[0], neighbor[1], board, trieNode, visited, wordsInBoard)
 
 	visited[i][j] = False
-	return
 
 
 def getNeighbors(i, j, board):
@@ -106,4 +105,5 @@ def getNeighbors(i, j, board):
 
 	if j < len(board[0]) - 1:
 		neighbors.append([i, j + 1])
+
 	return neighbors

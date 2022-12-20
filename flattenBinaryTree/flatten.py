@@ -1,10 +1,12 @@
 
+
 # This is the class of the input root. Do not edit it.
 class BinaryTree:
 	def __init__(self, value, left=None, right=None):
 		self.value = value
 		self.left = left
 		self.right = right
+
 
 def flatten(tree):
 
@@ -27,10 +29,12 @@ def flatten(tree):
 
 	return left, right
 
+
 def connect(left, right):
 	left.right = right
 	right.left = left
 	return None
+
 
 # Explanation of Solution: Build a recursive method that given a node tree, it returns the left most node and the right most node.
 # The base case is when we have tree = None. The other base case is when tree.left = None / tree.right = None. The flattenning of

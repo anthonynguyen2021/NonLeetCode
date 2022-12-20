@@ -1,5 +1,6 @@
 import heapq
 
+
 # Time = O(log n) - used to heap push and heap pop at each call of insert.
 # Space = O(n) to store max / min heap
 class ContinuousMedianHandler:

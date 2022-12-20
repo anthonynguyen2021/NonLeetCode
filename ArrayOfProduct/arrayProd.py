@@ -1,3 +1,5 @@
+
+
 # Time = O(n^2) - two forloops 
 # Space = O(n) - storage for the output
 # Solution: Brute Force
@@ -12,6 +14,7 @@ def arrayOfProducts(array):
 
 			if i != j:
 				currentProduct *= array[j]
+
 		output[i] = currentProduct
 
 	return output 

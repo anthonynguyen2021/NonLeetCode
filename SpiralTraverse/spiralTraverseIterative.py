@@ -38,6 +38,7 @@ def spiralTraverse(array):
 
 	return spiral
 
+
 # Here's a second approach and is easier than the above - simplification comes from the body of the while loop. The base case / edge case to worry about is when
 # topRow == bottomRow & leftCol == rightCol - draw these basic examples.
 def spiralTraverse(array):

@@ -1,7 +1,6 @@
-
-
 # Time = O(n^2) where n = len(heights)
 # Space = O(1)
+
 
 # Brute Force Approach: At each index, we count how much water is occupied at this index.
 # For now, assume heights[i] = 0. Note that we look at the largest height to the left of index i

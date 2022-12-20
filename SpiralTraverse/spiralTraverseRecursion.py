@@ -1,6 +1,7 @@
 # Time = O(n) where n is the number of elements in the matrix
 # Space = O(n)
 
+
 # Idea of solution (recursion): Use the 4 pointer approach (similar to iterative approach). 
 # Pay attention to the return statement of this recursive method. At each call of the function,
 # the spiral array is being populated by the traversal of the outside layer of the matrix. Remove this layer
@@ -12,6 +13,7 @@ def spiralTraverse(array):
 	firstRow, lastRow, firstCol, lastCol = 0, len(array) - 1, 0, len(array[0]) - 1
 	spiral = []
 	return recursiveTraversal(array, spiral, firstRow, lastRow, firstCol, lastCol)
+
 
 def recursiveTraversal(array, spiral, firstRow, lastRow, firstCol, lastCol):
 

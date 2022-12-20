@@ -2,7 +2,8 @@
 
 def numberOfWaysToMakeChange(n, denoms):
 	'''
-	T = O(len(denoms) * n) | S = O(n)
+	Time: O(len(denoms) * n)
+	Space: O(n)
 
 	Idea of solution: 
 

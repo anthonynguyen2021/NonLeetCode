@@ -1,8 +1,7 @@
-
-
 # Idea of Solution: Find the distance from descendant1 & descendant 2 to the top ancestor. For argument sake, let's assume descandant1 is at a larger depth than descendant 2. 
 # Keep traversing the ancestor of descendant 1 until both nodes are equi-distance from the top ancestor. As long as these two nodes aren't equal, look at both of their ancestors
 # and repeat. 
+
 
 # Time = O(h) h is the height of the tree
 # Space = O(1)
