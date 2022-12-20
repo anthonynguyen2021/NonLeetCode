@@ -1,9 +1,13 @@
-# time = O(n * d^2) | Space = O(n * d)
 
-# Solution: Use top-down dp solution. Use a helper method dfs(m, index) solves the problem using input m using
-# denoms[:index+1].
 
 def numberOfWaysToMakeChange(n, denoms):
+	'''
+	Time: O(n * d^2) where d = len(denoms)
+	Space: O(n * d)
+
+	Solution: Use top-down dp solution. Use a helper method dfs(m, index) solves the problem using input m using
+	denoms[:index+1].
+	'''
 	
 	# Edge case
 	if n == 0:
@@ -26,13 +30,14 @@ def numberOfWaysToMakeChange(n, denoms):
 			return 0
 		
 		numWays = 0
-		for idx in reversed(range(0, index+1)):
-			numWays += dfs(m-denoms[idx], idx) # note that we use idx, not idx-1 since we can use the coin again.
+
+		for idx in reversed(range(0, index + 1)):
+			numWays += dfs(m - denoms[idx], idx) # note that we use idx, not idx - 1 since we can use the coin again.
 			
 		memo[(m, index)] = numWays
 		
 		return memo[(m, index)]
 	
-	dfs(n, len(denoms)-1)
+	dfs(n, len(denoms) - 1)
 	
-	return memo[(n, len(denoms)-1)]
+	return memo[(n, len(denoms) - 1)]
