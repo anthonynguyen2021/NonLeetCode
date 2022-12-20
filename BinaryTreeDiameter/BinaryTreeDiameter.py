@@ -8,7 +8,6 @@ class BinaryTree:
 		self.right = right
 
 
-
 # Store diameter / height in an object for each node
 class TreeInfo:
 	def __init__(self, diameter, height):
