@@ -40,12 +40,16 @@ class test(unittest.TestCase):
 
 	def test_1(self):
 		self.assertEqual(class_obj.two_sum_mult([1], 2), float('inf'))
+
 	def test_2(self):
 		self.assertEqual(class_obj.two_sum_mult([1, 2, 3, 4], 12), [2, 3])
+
 	def test_3(self):
 		self.assertEqual(class_obj.two_sum_mult([], 3), float('inf'))
+
 	def test_4(self):
 		self.assertEqual(class_obj.two_sum_mult([2, -3], -6), [0, 1])
+
 
 if __name__ == '__main__':
 	unittest.main()

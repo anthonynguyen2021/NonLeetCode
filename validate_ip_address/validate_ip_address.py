@@ -29,10 +29,12 @@ class Solution:
 
 class_obj = Solution()
 
+
 class test(unittest.TestCase):
 	
 	def test_1(self):
 		self.assertEqual(class_obj.validate_ip_address('192.168.0.1'), True)
+
 	def test_2(self):
 		self.assertEqual(class_obj.validate_ip_address('0.0.0.0'), True)
 
@@ -44,3 +46,7 @@ class test(unittest.TestCase):
 
 	def test_5(self):
 		self.assertEqual(class_obj.validate_ip_address('12.34.56.oops'), False)
+
+
+if __name__ == '__main__':
+	unittest.main()
