@@ -11,22 +11,28 @@ class LinkedList:
 # Your function doesn't need to return anything. Returning the head is ok.
 
 def removeKthNodeFromEnd(head, k):
-	# Time = O(n)
-	# Space = O(1)
-    	# assume k in {1, ... , n}
+	'''
+	# Time: O(n) where n = # of nodes in the linked list
+	# Space: O(1)
+    # assume k in {1, ... , n}
 	# linked list has length >= 2 and has at least k nodes
-	left = head 
-	right = head
+	'''
+	left = right = head 
 	count = 0
+
 	while count != k:
 		right = right.next
 		count += 1
+
 	if not right:  # modifies the head node
 		head.value = head.next.value 
 		head.next = head.next.next
 		return head
+
 	while right.next:
 		left = left.next 
-		right = right.next 
-	left.next = left.next.next 
-	return head 
+		right = right.next
+
+	left.next = left.next.next
+
+	return head

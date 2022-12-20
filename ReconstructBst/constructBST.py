@@ -10,21 +10,24 @@ class BST:
 		self.left = left
 		self.right = right
 
-# Time = O(n^2) - The worst case is that we have a BST that's just unbalanced - think all nodes only have left children, no right children. So the for loop at each recursive call
-# gives us the sum of the first n integers roughly.
-
-# Space = O(n) - Store the BST nodes.
+# Time: O(n^2) <- The worst case is that we have a BST that's just unbalanced - think all nodes only have left children, no right children. So the for loop at each recursive call
+# gives us the sum of the first n integers roughly where n = len(preOrderTraversalValues)
+# Space: O(n) <- Store the BST nodes.
 def reconstructBst(preOrderTraversalValues):
+
 	if len(preOrderTraversalValues) == 0:
 		return None
     
 	rootValue = preOrderTraversalValues[0]
 	preOrderIdx = len(preOrderTraversalValues)
+
 	for idx in range(1, preOrderIdx):
+
 		if rootValue <= preOrderTraversalValues[idx]:
 			preOrderIdx = idx
 			break
-	
+
 	leftSubtree = reconstructBst(preOrderTraversalValues[1:preOrderIdx])
 	rightSubtree = reconstructBst(preOrderTraversalValues[preOrderIdx:])
+
 	return BST(rootValue, leftSubtree, rightSubtree)

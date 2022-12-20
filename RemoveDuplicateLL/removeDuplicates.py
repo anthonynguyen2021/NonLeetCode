@@ -4,7 +4,7 @@ class LinkedList:
 		self.value = value
 		self.next = None
 
-# Time = O(n)
+# Time = O(n) where n = # of nodes in the linked list
 # Space = O(1)
 
 # Explanation: Use a while loop in this problem. The idea is use a pointer that checks if 
@@ -13,9 +13,13 @@ class LinkedList:
 # equal, move the current <- current.next
 
 def removeDuplicatesFromLinkedList(linkedList):
+
 	current = linkedList
+
 	while current:
+
 		while current.next and current.value == current.next.value:
 			current.next = current.next.next
 		current = current.next
+
 	return linkedList

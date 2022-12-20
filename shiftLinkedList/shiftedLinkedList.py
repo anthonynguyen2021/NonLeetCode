@@ -12,9 +12,10 @@
 # If k > 0, we can think of the null node is the n+1 position. So we have (n+1) - k = n+ 1 - k position to get to the new head (we're using 0-based positioning). n+1 -k-1 for the new head.
 # If k < 0, we can march |k| to get to the new head. -k-1 to get to the new tail. 
 def shiftLinkedList(head, k):
-    	# Find length of linkedlist
+    # Find length of linkedlist
 	length = 1
 	oldTail = head
+
 	while oldTail.next:
 		length += 1
 		oldTail = oldTail.next
@@ -23,6 +24,7 @@ def shiftLinkedList(head, k):
 	offset = abs(k) % length
 	if offset == 0:
 		return head
+
 	# Given 0 -> 1 -> .... -> n where length is n+1
 	# How many steps from the head, I can get to the new head
 	numSteps = length - offset if k > 0 else offset

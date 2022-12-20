@@ -42,6 +42,7 @@ class Solution:
 
 class_obj = Solution()
 
+
 class test(unittest.TestCase):
 	
 	def test_1(self):
@@ -52,6 +53,7 @@ class test(unittest.TestCase):
 
 	def test_3(self):
 		self.assertEqual(class_obj.shifted_binary_search([5], 5), 0)
+
 
 if __name__ == '__main__':
 	unittest.main()

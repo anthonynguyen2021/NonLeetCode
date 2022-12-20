@@ -1,9 +1,11 @@
+
 # This is the class of the input root. Do not edit it.
 class BinaryTree:
-    	def __init__(self, value, left=None, right=None):
-        	self.value = value
-        	self.left = left
-        	self.right = right
+	def __init__(self, value, left=None, right=None):
+		self.value = value
+		self.left = left
+		self.right = right
+
 # Explanation: The right sibling tree is connect every node to its right node in the complete binary tree version. This means that if a node to the right of it in the same depth
 # is Null, that node points to null. The idea of this method is to write a recursive method that does the following: At a tree rooted at node, we call the function at
 # the tree rooted at node.left and this function connects all of its nodes to its right sibling where we consider all tree, so that we can connect all the nodes in the tree rooted
@@ -16,23 +18,26 @@ class BinaryTree:
 # on that right node - right.
 		
 # Complexities explanation: The space comes from the call on the function call stack. The time comes from at each node, we do constant amount of work - connect node to its right sibling.
-# Time = O(n) | Space = O(h) where h is the height of the tree
+# Time = O(n) | Space = O(h) where n = # nodes in tree and h = the height of the tree
 def rightSiblingTree(root):
-    	mutate(root, None, False)
+	mutate(root, None, False)
 	return root
 
 def mutate(node, parent, isLeft):
+
 	if not node:
 		return None
+
 	mutate(node.left, node, True)
 	right = node.right
+
 	if not parent:
 		node.right = None
 	elif isLeft:
 		node.right = parent.right
+	elif not parent.right:
+		node.right = None
 	else:
-		if not parent.right:
-			node.right = None
-		else:
-			node.right = parent.right.left
+		node.right = parent.right.left
+
 	mutate(right, node, False)

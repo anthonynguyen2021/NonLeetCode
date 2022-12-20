@@ -2,8 +2,9 @@ from collections import deque
 import string
 import unittest
 
+
 class Solution:
-	# time = O(m * (V+E)) | space = O(m * V) where V = # of nodes in graph, E = # of edges (words differ by 1 letter), and m = length of the longest word
+	# time = O(m * (V + E)) | space = O(m * V) where V = # of nodes in graph, E = # of edges (words differ by 1 letter), and m = length of the longest word
 	# solution: use bfs. Check if target is in vocabulary first. If not, return -1. Otherwise, adjoin it to vocabulary. See code to see neighbors.
 	def shortest_word_edit_path(self, source, target, words):
 		'''
@@ -43,18 +44,21 @@ class Solution:
 						continue
 
 					visited.add(neighbor_word)
-					queue.append((neighbor_word, steps+1))
+					queue.append((neighbor_word, steps + 1))
 
 		return -1
 
 class_obj = Solution()
 
+
 class test(unittest.TestCase):
 
 	def test_1(self):
 		self.assertEqual(class_obj.shortest_word_edit_path('bit', 'dog', ['but', 'put', 'big', 'pot', 'pog', 'dog', 'lot']), 5)
+
 	def test_2(self):
 		self.assertEqual(class_obj.shortest_word_edit_path('no', 'go', ['to']), -1)
+
 
 if __name__ == '__main__':
 	unittest.main()

@@ -14,12 +14,16 @@
 # Explanation - split is linear so O(n). filter is roughly O(n). We store roughly O(n) in tokens and stack. Join is roughly O(n). Here n is the length of path.
 # Time = O(n) | Space = O(n)
 def shortenPath(path):
-    	absolutePath = path[0] == "/"
+
+	absolutePath = path[0] == "/"
 	tokens = filter(isValid, path.split("/"))
 	stack = []
+
 	if absolutePath:
 		stack.append("")
+
 	for token in tokens:
+
 		if token == "..":
 			if len(stack) == 0 or stack[-1] == token:
 				stack.append(token)
@@ -32,7 +36,9 @@ def shortenPath(path):
 	
 	if len(stack) == 1 and stack[0] == "":
 		return "/"
+
 	return "/".join(stack)
+
 
 def isValid(token):
 	return len(token) > 0 and token != "."
