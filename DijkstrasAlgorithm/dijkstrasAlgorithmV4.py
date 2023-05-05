@@ -1,6 +1,6 @@
 import heapq
 
-# Time = O(vlogv + e) | Space = O(v) where v = # of vertices, e = # of edges in the graph
+# Time = O(v^2logv + e) | Space = O(v) where v = # of vertices, e = # of edges in the graph
 # Explanation of complexities - worst case is we perform v heap operations.
 # Also, we visit every edge. Hence time = O(vlogv + e). For space, this is due to result
 # and heap.
@@ -23,12 +23,12 @@ def dijkstrasAlgorithm(start, edges):
 
 		currentDistance, node = heapq.heappop(minHeap) # currentDistance is the shortest distance from start to node (assuming node hasn't been visited)
 
-		if node in visited: # it's possible that node appeared in minHeap at least twice - this line is to speed up code
+		if node in visited:
 			continue
 		
 		for neighborNode, distance in edges[node]:
 
-			if neighborNode in visited:
+			if neighborNode in visited: # it's possible that node appeared in minHeap at least twice - this line is to speed up code
 				continue
 
 			result[neighborNode] = min(result[neighborNode], currentDistance + distance)
