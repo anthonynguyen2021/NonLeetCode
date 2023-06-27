@@ -26,7 +26,7 @@ def dijkstrasAlgorithm(start, edges):
 		if node in visited:
 			continue
 
-    visited.add(node)
+    		visited.add(node)
 		
 		for neighborNode, distance in edges[node]:
 
